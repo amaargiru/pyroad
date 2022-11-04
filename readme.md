@@ -171,20 +171,34 @@ end
 
 subgraph OOP
 direction LR
-Class -.-> slots -.-> Object_Copy -.->Inheritance -.-> Metaprogramming
+OOP_Base -.-> Duck_Types -.-> Iterable_Duck_Types -.-> Object_Copy -.->Inheritance -.-> Metaprogramming
 
-subgraph Class
+subgraph OOP_Base
+direction LR
+oopBase1("init, repr, str")
+oop_property("@property")
+staticmethod("@staticmethod")
+classmethod("@classmethod, cls, self")
+slots(slots)
+end
+
+subgraph Duck_Types
 direction LR
 Comparable(Comparable)
 Hashable(Hashable)
 Sortable(Sortable)
+Iterator(Iterator)
 Callable(Callable)
+dt_Context_Manager("Context Manager")
+end
+
+subgraph Iterable_Duck_Types
+direction LR
 Iterable(Iterable)
 Collection(Collection)
 Sequence(Sequence)
+ABC_Sequence("ABC Sequence")
 end
-
-slots(slots)
 
 subgraph Object_Copy
 direction LR
@@ -196,8 +210,9 @@ subgraph Inheritance
 direction LR
 objInheritance(Inheritance)
 Multiple_Inheritance("Multiple Inheritance")
+abstractmethod("@abstractmethod")
 MRO(MRO)
-Inheritance_of_slots("Inheritance of slots")
+Inheritance_of_slots("Slots' inheritance")
 end
 
 subgraph Metaprogramming
@@ -210,6 +225,9 @@ end
 end
 
 subgraph Language_Skeleton
+direction LR
+Garbage_Collector -.-> Exception -.-> Introspection -.-> Other
+
 subgraph Garbage_Collector
 direction LR
 reference_counting("Reference counting")
@@ -217,11 +235,7 @@ garbage_collector("Garbage collector")
 debug_objgraph("GC debug / objgraph")
 pypygc("PyPy GC")
 end
-GIL(GIL)
-args_kwargs("*args, **kwargs")
-lambda(lambda)
-Conditional_Expression("Conditional Expression")
-Closure(Closure)
+
 subgraph Exception
 direction LR
 exception_handling("Exception handling")
@@ -230,13 +244,23 @@ exception_raising("Exception raising")
 user_exception("User exceptions")
 exception_object("Exception Object")
 end
+
 subgraph Introspection
 direction LR
 variables(variables)
 attributes(attributes)
 parameters(parameters)
 end
+
+subgraph Other
+direction LR
+GIL(GIL)
+args_kwargs("*, *args, **kwargs")
+lambda(lambda)
+Closure(Closure)
 Operator(Operator)
+end
+
 end
 
 subgraph Multithreading_&_Multiprocessing
@@ -332,7 +356,8 @@ end
 subgraph Cryptography
 direction LR
 MD5(MD5)
-AES("AES")
+AES(AES)
+cryptomore("...")
 end
 
 subgraph Testing
@@ -393,45 +418,56 @@ end
 subgraph SQL
 direction LR
 
-DB_Basics -.-> SQL_Basics -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM
+DB_Basics -.-> SQL_Commands -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM
 
 subgraph DB_Basics
 direction LR
 Relational_model("Relational model")
-Transaction("Transaction")
-Isolation("Isolation")
+Transaction(Transaction)
+subgraph ACID
+Consistency(Consistency)
+Isolation(Isolation)
+end
 Nplusone("N+1 problem")
 SQL_injection("SQL injection")
 NoSQL(NoSQL)
 end
 
-subgraph SQL_Basics
+subgraph SQL_Commands
 direction LR
-DDL(DDL)
-DML(DML)
-DCL(DCL)
+
+subgraph DDL
+CREATE(CREATE)
+ALTER(ALTER)
+DROP(DROP)
+ddlmore("...")
 end
 
-subgraph SQLite
-direction LR
-SQLiteConnect(Connect)
-SQLiteWrite(Write)
-SQLiteRead(Read)
+subgraph DML
+SELECT(SELECT)
+INSERT(INSERT)
+UPDATE(UPDATE)
+DELETE(DELETE)
+dmlmore("...")
 end
+
+DCL(DCL)
+TCL(TCL)
+
+end
+
+SQLite(SQLite)
 
 subgraph MySQL
 direction LR
-MySQLConnect(Connect)
-MySQLWrite(Write)
-MySQLRead(Read)
+MySQL_Workbench("MySQL Workbench")
 end
 
 subgraph PostgreSQL
 direction LR
 PostgreSQL_benefits("PostgreSQL benefits")
-PostgreSQLConnect(Connect)
-PostgreSQLWrite(Write)
-PostgreSQLRead(Read)
+pgAdmin(pgAdmin)
+PostgreSQL_more("...")
 end
 
 subgraph ORM
@@ -444,36 +480,38 @@ end
 
 subgraph Net
 direction LR
-REST -.-> HTTP -.-> sockets -.-> Frameworks -.-> API
-
-REST(REST)
+HTTP -.-> requests -.-> websocket -.-> Frameworks -.-> API
 
 subgraph HTTP
 direction LR
 HTTPS(HTTPS)
-CSRF-token(CSRF-token)
+CORS(CORS)
 end
 
-sockets(sockets)
+requests(requests)
+websocket(websocket)
 
 subgraph Frameworks
 direction LR
+aiohttp(aiohttp)
 Flask(Flask)
 Django(Django)
-aiohttp(aiohttp)
 end
 
 subgraph API
 direction LR
-FastAPI(FastAPI)
+REST(REST)
+Authentication(Authentication)
 jwt_tokens("JWT tokens")
+Swagger(Swagger)
+FastAPI(FastAPI)
 end
 
 end
 
 subgraph Architecture
 direction LR
-WhatIsArch -.-> Principles -.-> Paradigms -.-> Object-oriented -.-> Practices -.-> Microservices -.-> Messaging
+WhatIsArch -.-> Principles -.-> Paradigms -.-> Object-oriented -.-> Practices -.-> Architectural_Patterns -.-> Microservices -.-> Messaging
 
 WhatIsArch("What is?")
 subgraph Principles
@@ -523,8 +561,9 @@ subgraph Messaging
 direction LR
 RabbitMQ(RabbitMQ)
 Apache_Kafka("Apache Kafka")
-NATS(NATS)
 end
+
+Architectural_Patterns("Architectural Patterns")
 
 end
 
@@ -555,67 +594,155 @@ end
 
 end
 
-classDef dashed stroke-dasharray:5 5
-classDef bolded stroke-width:3px,stroke:#f99
+classDef trainee fill:#6ADA6A, stroke-width:3px
+classDef middle fill:#FF9900, stroke-width:3px
 
-class B-tree dashed;
-class RedBlackTree dashed;
-class AVLTree dashed;
-class trie dashed;
-class SinglyLinkedList dashed;
-class Protocol_Buffers dashed;
-class Pandas dashed;
-class fmore dashed;
-class fimore dashed;
-class Metaclass dashed;
-class ABCMeta dashed;
-class Registry dashed;
-class Inheritance_of_slots dashed;
-class pypygc dashed;
-class Value dashed;
-class muArray dashed;
-class Manager dashed;
-class Listener dashed;
-class new_event_loop dashed;
-class run_forever dashed;
-class lowlapi_more dashed;
-class asLifoQueue dashed;
-class Timer dashed;
-class Low_level_API dashed;
-class Metaprogramming dashed;
-class Call_Graph dashed;
-class Pretty_Print dashed;
-class MySQL dashed;
-class MySQLConnect dashed;
-class MySQLWrite dashed;
-class MySQLRead dashed;
-class Kubernetes dashed;
-class Jenkins dashed;
-class NATS dashed;
-class aiohttp dashed;
-class peewee dashed;
-class Neural_Networks dashed;
+class List trainee;
+class tuple trainee;
+class dict trainee;
+class set trainee;
+class array trainee;
+class bytes trainee;
+class deque trainee;
+class heap trainee;
+class range trainee;
+class string trainee;
+class datetime trainee;
+class slice trainee;
+class sort trainee;
+class sorted trainee;
+class listcomprehension trainee;
+class bisect trainee;
+class fmap trainee;
+class ffilter trainee;
+class freduce trainee;
+class String_Built-in_Functions trainee;
+class encode trainee;
+class decode trainee;
+class Read_Write trainee;
+class Text_Binary trainee;
+class JSON trainee;
+class paths trainee;
+class Data_Built-in_Functions trainee;
+class icount trainee;
+class icycle trainee;
+class irepeat trainee;
+class pairwise trainee;
+class product trainee;
+class combinations trainee;
+class enumerate trainee;
+class generator trainee;
+class decorator trainee;
+class context trainee;
+class oopBase1 trainee;
+class oop_property trainee;
+class staticmethod trainee;
+class classmethod trainee;
+class slots trainee;
+class Comparable trainee;
+class Hashable trainee;
+class Sortable trainee;
+class Iterable trainee;
+class Collection trainee;
+class shallow trainee;
+class deep trainee;
+class objInheritance trainee;
+class Multiple_Inheritance trainee;
+class MRO trainee;
+class reference_counting trainee;
+class garbage_collector trainee;
+class GIL trainee;
+class args_kwargs trainee;
+class lambda trainee;
+class exception_handling trainee;
+class built_in_exceptions trainee;
+class exception_raising trainee;
+class create_task trainee;
+class gather trainee;
+class wait_for trainee;
+class asQueue trainee;
+class Lock trainee;
+class Event trainee;
+class variables trainee;
+class Thread trainee;
+class Pool trainee;
+class Logging trainee;
+class Stopwatch trainee;
+class timeit trainee;
+class Random trainee;
+class input trainee;
+class Command_Line_Arguments trainee;
+class simple_print trainee;
+class MD5 trainee;
+class AES trainee;
+class pytest trainee;
+class FizzBuzz trainee;
+class BubbleSort trainee;
+class QuickSort trainee;
+class RadixSort trainee;
+class Adjacency_Matrix trainee;
+class Adjacency_List trainee;
+class Linear_Search trainee;
+class Binary_Search trainee;
+class DFS trainee;
+class bigo trainee;
+class divide_and_conquer trainee;
+class Greedy_algorithm trainee;
+class Recursion trainee;
+class Relational_model trainee;
+class Transaction trainee;
+class Isolation trainee;
+class PostgreSQL_benefits trainee;
+class peewee trainee;
+class CREATE trainee;
+class ALTER trainee;
+class DROP trainee;
+class SELECT trainee;
+class INSERT trainee;
+class UPDATE trainee;
+class DELETE trainee;
+class SQLite trainee;
+class Flask trainee;
+class Consistency trainee;
+class HTTPS trainee;
+class requests trainee;
+class websocket trainee;
+class GitHub_Actions trainee;
+class WhatIsArch trainee;
+class SRP trainee;
+class OCP trainee;
+class LSP trainee;
+class ISP trainee;
+class DIP trainee;
+class coupling_vs_cohesion trainee;
+class Procedural trainee;
+class parObject-oriented trainee;
+class ooInheritance trainee;
+class Encapsulation trainee;
+class Polymorphism trainee;
+class Abstraction trainee;
+class trunk_based_development trainee;
+class aiohttp trainee;
 
-class NoSQL bolded;
-class Functional bolded;
-class Microservices bolded;
-class RabbitMQ bolded;
-class Scrum bolded;
-class Apache_Kafka bolded;
-class git bolded;
-class Linux bolded;
-class Docker bolded;
-class Cryptography bolded;
-class Methods bolded;
-class PostgreSQL bolded;
-class HTTP bolded;
-class SQLAlchemy bolded;
-class Flask bolded;
-class Django bolded;
-class FastAPI bolded;
-class ORM bolded;
-class TensorFlow bolded;
-class Keras bolded;
-class regex bolded;
-class Testing bolded;
+class NoSQL middle;
+class Functional middle;
+class RabbitMQ middle;
+class Scrum middle;
+class Apache_Kafka middle;
+class git middle;
+class Linux middle;
+class Docker middle;
+class methmore middle;
+class PostgreSQL_more middle;
+class SQLAlchemy middle;
+class Django middle;
+class FastAPI middle;
+class ORM boldmiddleed;
+class TensorFlow middle;
+class Keras middle;
+class cryptomore middle;
+class Jenkins middle;
+class Kubernetes middle;
+class Architectural_Patterns middle;
+
 ```
