@@ -1,3 +1,26 @@
+## Пайтон Джуньор Плюс, или путеводитель начинающего Python-программиста
+
+Добрый день! Меня зовут Михаил Емельянов, по профессии я программист программ, а эту небольшой путеводитель по возможностям языка Python меня сподвиг написать довольно существенный, на мой взгляд, разрыв между декларируемыми объемами всевозможных курсов программирования и требованиями реальных, даже достаточно скромнооплачиваеых вакансий, а также некоторая обобщенность подобных Python-путеводителей, найденных мной на просторах Сети.
+
+Особенно выбивают из равновесия советы изучить, скажем «Алгоритмы и структуры данных» или «SQL». Да можно зубы сточить, изучая эти темы, и даже будучи седовласым старцем, постоянно открывать для себя что-то новое, не выходя за рамки тематики «Алгоритмов».
+
+Пользуясь аналогиями из игрового мира, можно сказать, что начинающий программист зачастую стоит на берегу озера кипящей лавы, в центре которого находится остров со столь вожделенными вакансиями, а промежуточные островки, по которым надо перепрыгивать, постепенно наращивая свои навыки в последовательных мини-квестах, либо отсутствуют, либо расположены несистемно и хаотично, либо достаточно ровная их последовательность обрывается, так и не успев помочь отойти сколько-нибудь далеко от берега. Давайте попробуем построить дорожку островков-подсказок, ряд которых, хоть и не без усилий, позволит-таки нам достичь цели.
+
+Пользоваться путеводителем очень просто. Как в обычном тексте, идите слева направо и сверху вниз. Если вы только начинаете изучать Python, то идите по зеленым пунктам путеводителя. Если накопленный опыт, любопытство или необходимость толкают вас глубже, начните изучать разделы, помеченные серым. Оранжевым помечены темы, требующие углубленного изучения, ими лучше заняться (хотя бы и не копая, для начала, особенно глубоко) в третий проход.
+
+Погружаясь в Python, не забывайте про прекрасную официальную документацию [docs.python.org](https://docs.python.org/). Изучив её, хотя бы по диагонали, и постепенно углубляясь в нужные разделы, вы сможете убедиться, что многие «хаки», «открытия» и прочие неочевидные вещи уже давно разжеваны, описаны и имеют подробные примеры применения.
+
+Также я бы рекомендовал для изучения базового синтаксиса Python на полную катушку использовать [leetcode.com](https://leetcode.com/problemset/all/?difficulty=EASY&page=1&status=NOT_STARTED). Если отфильтровать задачи по уровню «Easy», а потом добавить дополнительную сортировку по столбцу «Acceptance», то перед вами предстанет не волчий оскал соревновательной платформы, а ванильный букварь с плавно нарастающим уровнем задачек.
+
+Что ж, пожалуй, довольно запрягать. Погнали!
+## Структуры данных
+
+Напоминаю, если вы — начинающий разаработчик, идите слева направо по пунктам, отмеченным зеленым цветом. Создайте экземпляры каждого типа, попробуйте добавить и удалить элементы, поработайте с ними в отладчике. Посмотрите, какого размера получаются объекты, попробуйте разобраться, почему list и array, содержащие одинаковые данные, отличаются в размерах. Изучите особенности каждого типа, почитайте и подумайте сами, в каких задачах какая структура данных будет смотреться оптимальнее.
+
+Не забывайте, что это всего лишь путеводитель, оглавление для книги, которую вы должны написать сами. Активно ищите информацию в Сети, старайтесь работать с англоязычными источниками и с официальной документацией. Замените «Пикабу» и «ЯПлакал» на [Stackoverflow](https://stackoverflow.com/), там масса захватывающего чтива!
+
+Если начинает получаться, переходите к следующему разделу, если не получается — не расстраивайтесь. Не надо ассоциировать свой ум с мечом Александра Македонского, разрубившего Гордиев узел одним чётким, уверенным движением, достойным главной страницы «Инстаграма». Будьте как рубанок — снимайте по тонкой кожурке за проход, и рано или поздно непонимание уйдёт, даже если вам кажется, что это пропасть глубиной в десять тысяч ли.
+
 ```mermaid
 flowchart TD
 
@@ -215,6 +238,14 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Манипуляция данными
+
+Пробуйте управлять вашими данными, почувствуйте, как вы можете лепить всё что угодно из этой податливой глины. Попробуйте создать структуру данных на много элементов (миллион, например), отсортируйте (sort) их, молниеносно найдите нужные значения при помощи bisect и запишите полученные результаты в JSON-файл.
+
+Если всё идет по плану, попробуйте копнуть «серые» темы: примените regex для решения какой-нибудь несложной задачи или запишите ранее полученные данные в формате Pickle, нагляно, по размеру получившихся файлов, поняв, зачем нужны двоичные форматы файлов.
+
+Здесь вы видете первые пункты, помеченные оранжевым. Погуглите, что такое TensorFlow и Keras, какие задачи они решают. Может быть, это ваша будущая работа, ваше призвание?
+
 ```mermaid
 flowchart TD
 
@@ -433,6 +464,10 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Потоки данных
+
+Добавьте к своим навыкам управления данными более специфичные возможности. Все рассмотренные темы крайне необходимы в процессе практического программирования и в том или ином виде присутствуют во всех современных языках. Так что если со временем вы будете переходить с Python на Java, C# или C++ — полученные знания не станут балластом.
+
 ```mermaid
 flowchart TD
 subgraph Data_Flows
@@ -629,6 +664,10 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Объектно-ориентированное программирование
+
+Углубитесь в тематику объектно-ориентированного программирования. Поймите, что объекты — ваши друзья, и все их особенности и свойства, даже если они на первый взгляд не совсем интуитивны, имеют чисто утилитарные причины для существования. ООП существенно облегчает разделение, разработку и сопровождения кода, не просто делая очень сложные задачи подъемными для программистов средней руки, но и делая управляемее, предсказуемее и лучше мир вокруг нас.
+
 ```mermaid
 flowchart TD
 
@@ -839,6 +878,10 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Специфика языка
+
+Так, отлично, еще немного глубже. Изучение особенностей работы GIL или GC даст вам понимание, почему в том или ином случае всё идет наперекосяк, совсем не так, как вы планировали. А исключения вы, возможно, уже вовсю используете, учитывая их возможное возникновение при некоторых операциях со структурами данных, так что просто изучите их поглубже.
+
 ```mermaid
 flowchart TD
 
@@ -1033,824 +1076,10 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
-```mermaid
-flowchart TD
+## Многопоточность и многопроцессорность
 
-subgraph Data_Management
-direction LR
-slice(slice) -.-> Sorting -.-> Comprehension -.-> bisect(bisect) -.-> Functools -.-> String_Management -.-> Datetime_Management -.->File -.-> Data_Analysis -.-> Neural_Networks
-subgraph Sorting
-direction LR
-sort(sort)
-sorted(sorted)
-end
+Прежде чем погрузиться в изучение многопоточности и многопроцессорной обработки данных, обязательно изучите их типовые сценарии использования. Возможны ситуации, когда выигрыш будет минимальным или будет отсутствовать вовсе. Попробуйте реализовать совместную быструю обработку данных и ожидание пользовательского ввода, меняющего исходные данные для расчетов, это даст вам понимание возможностей, плюсов и минусов разных подходов. Не пытайтесь использовать сразу все возможности, предоставляемые Python, отталкивайтесь от решаемой задачи.
 
-subgraph Comprehension
-direction LR
-listcomprehension(list)
-dictcomprehension(dict)
-setcomprehension(set)
-end
-
-subgraph Functools
-direction LR
-fmap(map)
-ffilter(filter)
-freduce(reduce)
-fpartial(partial)
-fmore(...)
-end
-
-subgraph String_Management
-direction LR
-String_Built-in_Functions("Built-in functions")
-regex(regex)
-end
-
-subgraph Datetime_Management
-direction LR
-encode(encode)
-decode(decode)
-dtmath(math)
-end
-
-subgraph File
-direction LR
-Read_Write("read/write")
-Text_Binary("text/binary")
-JSON(JSON)
-Pickle("Pickle")
-Protocol_Buffers("Protocol Buffers")
-paths(paths)
-end
-
-subgraph Data_Analysis
-direction LR
-Data_Built-in_Functions("Built-in functions")
-NumPy(NumPy)
-Pandas(Pandas)
-end
-
-subgraph Neural_Networks
-direction LR
-TensorFlow(TensorFlow)
-Keras(Keras)
-end
-
-end
-
-classDef trainee fill:#6ADA6A, stroke-width:3px
-classDef middle fill:#FF9900, stroke-width:3px
-
-class List trainee;
-class tuple trainee;
-class dict trainee;
-class set trainee;
-class array trainee;
-class bytes trainee;
-class deque trainee;
-class heap trainee;
-class range trainee;
-class string trainee;
-class datetime trainee;
-class slice trainee;
-class sort trainee;
-class sorted trainee;
-class listcomprehension trainee;
-class bisect trainee;
-class fmap trainee;
-class ffilter trainee;
-class freduce trainee;
-class String_Built-in_Functions trainee;
-class encode trainee;
-class decode trainee;
-class Read_Write trainee;
-class Text_Binary trainee;
-class JSON trainee;
-class paths trainee;
-class Data_Built-in_Functions trainee;
-class icount trainee;
-class icycle trainee;
-class irepeat trainee;
-class pairwise trainee;
-class product trainee;
-class combinations trainee;
-class enumerate trainee;
-class generator trainee;
-class decorator trainee;
-class context trainee;
-class oopBase1 trainee;
-class oop_property trainee;
-class staticmethod trainee;
-class classmethod trainee;
-class slots trainee;
-class Comparable trainee;
-class Hashable trainee;
-class Sortable trainee;
-class Iterable trainee;
-class Collection trainee;
-class shallow trainee;
-class deep trainee;
-class objInheritance trainee;
-class Multiple_Inheritance trainee;
-class MRO trainee;
-class reference_counting trainee;
-class garbage_collector trainee;
-class GIL trainee;
-class args_kwargs trainee;
-class lambda trainee;
-class exception_handling trainee;
-class built_in_exceptions trainee;
-class exception_raising trainee;
-class create_task trainee;
-class gather trainee;
-class wait_for trainee;
-class asQueue trainee;
-class Lock trainee;
-class Event trainee;
-class variables trainee;
-class Thread trainee;
-class Pool trainee;
-class Logging trainee;
-class Stopwatch trainee;
-class timeit trainee;
-class Random trainee;
-class input trainee;
-class Command_Line_Arguments trainee;
-class simple_print trainee;
-class MD5 trainee;
-class AES trainee;
-class pytest trainee;
-class FizzBuzz trainee;
-class BubbleSort trainee;
-class QuickSort trainee;
-class RadixSort trainee;
-class Adjacency_Matrix trainee;
-class Adjacency_List trainee;
-class Linear_Search trainee;
-class Binary_Search trainee;
-class DFS trainee;
-class bigo trainee;
-class divide_and_conquer trainee;
-class Greedy_algorithm trainee;
-class Recursion trainee;
-class Relational_model trainee;
-class Transaction trainee;
-class Isolation trainee;
-class PostgreSQL_benefits trainee;
-class peewee trainee;
-class CREATE trainee;
-class ALTER trainee;
-class DROP trainee;
-class SELECT trainee;
-class INSERT trainee;
-class UPDATE trainee;
-class DELETE trainee;
-class SQLite trainee;
-class Flask trainee;
-class Consistency trainee;
-class HTTPS trainee;
-class requests trainee;
-class websocket trainee;
-class GitHub_Actions trainee;
-class WhatIsArch trainee;
-class SRP trainee;
-class OCP trainee;
-class LSP trainee;
-class ISP trainee;
-class DIP trainee;
-class coupling_vs_cohesion trainee;
-class Procedural trainee;
-class parObject-oriented trainee;
-class ooInheritance trainee;
-class Encapsulation trainee;
-class Polymorphism trainee;
-class Abstraction trainee;
-class trunk_based_development trainee;
-class aiohttp trainee;
-
-class NoSQL middle;
-class Functional middle;
-class RabbitMQ middle;
-class Scrum middle;
-class Apache_Kafka middle;
-class git middle;
-class Linux middle;
-class Docker middle;
-class methmore middle;
-class PostgreSQL_more middle;
-class SQLAlchemy middle;
-class Django middle;
-class FastAPI middle;
-class ORM boldmiddleed;
-class TensorFlow middle;
-class Keras middle;
-class cryptomore middle;
-class Jenkins middle;
-class Kubernetes middle;
-class Architectural_Patterns middle;
-
-```
-```mermaid
-flowchart TD
-subgraph Data_Flows
-direction LR
-
-itertools -.-> enumerate -.-> generator -.-> Decorator -.-> context
-
-subgraph itertools
-direction LR
-
-subgraph Infinite_Iterators
-icount(count)
-icycle(cycle)
-irepeat(repeat)
-end
-
-subgraph Finite_Iterators
-pairwise(pairwise)
-chain(chain)
-fimore(...)
-end
-
-subgraph Combinatorics
-product(product)
-combinations(combinations)
-combinations_with_replacement(combinations_with_replacement)
-permutations(permutations)
-end
-end
-
-enumerate(enumerate)
-generator(generator)
-
-subgraph Decorator
-direction LR
-decorator(decorator)
-LRUCache("LRU Cache")
-param_decorator("Parameterized decorator")
-end
-
-context("Context manager")
-
-end
-
-classDef trainee fill:#6ADA6A, stroke-width:3px
-classDef middle fill:#FF9900, stroke-width:3px
-
-class List trainee;
-class tuple trainee;
-class dict trainee;
-class set trainee;
-class array trainee;
-class bytes trainee;
-class deque trainee;
-class heap trainee;
-class range trainee;
-class string trainee;
-class datetime trainee;
-class slice trainee;
-class sort trainee;
-class sorted trainee;
-class listcomprehension trainee;
-class bisect trainee;
-class fmap trainee;
-class ffilter trainee;
-class freduce trainee;
-class String_Built-in_Functions trainee;
-class encode trainee;
-class decode trainee;
-class Read_Write trainee;
-class Text_Binary trainee;
-class JSON trainee;
-class paths trainee;
-class Data_Built-in_Functions trainee;
-class icount trainee;
-class icycle trainee;
-class irepeat trainee;
-class pairwise trainee;
-class product trainee;
-class combinations trainee;
-class enumerate trainee;
-class generator trainee;
-class decorator trainee;
-class context trainee;
-class oopBase1 trainee;
-class oop_property trainee;
-class staticmethod trainee;
-class classmethod trainee;
-class slots trainee;
-class Comparable trainee;
-class Hashable trainee;
-class Sortable trainee;
-class Iterable trainee;
-class Collection trainee;
-class shallow trainee;
-class deep trainee;
-class objInheritance trainee;
-class Multiple_Inheritance trainee;
-class MRO trainee;
-class reference_counting trainee;
-class garbage_collector trainee;
-class GIL trainee;
-class args_kwargs trainee;
-class lambda trainee;
-class exception_handling trainee;
-class built_in_exceptions trainee;
-class exception_raising trainee;
-class create_task trainee;
-class gather trainee;
-class wait_for trainee;
-class asQueue trainee;
-class Lock trainee;
-class Event trainee;
-class variables trainee;
-class Thread trainee;
-class Pool trainee;
-class Logging trainee;
-class Stopwatch trainee;
-class timeit trainee;
-class Random trainee;
-class input trainee;
-class Command_Line_Arguments trainee;
-class simple_print trainee;
-class MD5 trainee;
-class AES trainee;
-class pytest trainee;
-class FizzBuzz trainee;
-class BubbleSort trainee;
-class QuickSort trainee;
-class RadixSort trainee;
-class Adjacency_Matrix trainee;
-class Adjacency_List trainee;
-class Linear_Search trainee;
-class Binary_Search trainee;
-class DFS trainee;
-class bigo trainee;
-class divide_and_conquer trainee;
-class Greedy_algorithm trainee;
-class Recursion trainee;
-class Relational_model trainee;
-class Transaction trainee;
-class Isolation trainee;
-class PostgreSQL_benefits trainee;
-class peewee trainee;
-class CREATE trainee;
-class ALTER trainee;
-class DROP trainee;
-class SELECT trainee;
-class INSERT trainee;
-class UPDATE trainee;
-class DELETE trainee;
-class SQLite trainee;
-class Flask trainee;
-class Consistency trainee;
-class HTTPS trainee;
-class requests trainee;
-class websocket trainee;
-class GitHub_Actions trainee;
-class WhatIsArch trainee;
-class SRP trainee;
-class OCP trainee;
-class LSP trainee;
-class ISP trainee;
-class DIP trainee;
-class coupling_vs_cohesion trainee;
-class Procedural trainee;
-class parObject-oriented trainee;
-class ooInheritance trainee;
-class Encapsulation trainee;
-class Polymorphism trainee;
-class Abstraction trainee;
-class trunk_based_development trainee;
-class aiohttp trainee;
-
-class NoSQL middle;
-class Functional middle;
-class RabbitMQ middle;
-class Scrum middle;
-class Apache_Kafka middle;
-class git middle;
-class Linux middle;
-class Docker middle;
-class methmore middle;
-class PostgreSQL_more middle;
-class SQLAlchemy middle;
-class Django middle;
-class FastAPI middle;
-class ORM boldmiddleed;
-class TensorFlow middle;
-class Keras middle;
-class cryptomore middle;
-class Jenkins middle;
-class Kubernetes middle;
-class Architectural_Patterns middle;
-
-```
-```mermaid
-flowchart TD
-
-subgraph OOP
-direction LR
-OOP_Base -.-> Duck_Types -.-> Iterable_Duck_Types -.-> Object_Copy -.->Inheritance -.-> Metaprogramming
-
-subgraph OOP_Base
-direction LR
-oopBase1("init, repr, str")
-oop_property("@property")
-staticmethod("@staticmethod")
-classmethod("@classmethod, cls, self")
-slots(slots)
-end
-
-subgraph Duck_Types
-direction LR
-Comparable(Comparable)
-Hashable(Hashable)
-Sortable(Sortable)
-Iterator(Iterator)
-Callable(Callable)
-dt_Context_Manager("Context Manager")
-end
-
-subgraph Iterable_Duck_Types
-direction LR
-Iterable(Iterable)
-Collection(Collection)
-Sequence(Sequence)
-ABC_Sequence("ABC Sequence")
-end
-
-subgraph Object_Copy
-direction LR
-shallow("Shallow copy")
-deep("Deep copy")
-end
-
-subgraph Inheritance
-direction LR
-objInheritance(Inheritance)
-Multiple_Inheritance("Multiple Inheritance")
-abstractmethod("@abstractmethod")
-MRO(MRO)
-Inheritance_of_slots("Slots' inheritance")
-end
-
-subgraph Metaprogramming
-direction LR
-Metaclass("Meta Class")
-ABCMeta(ABCMeta)
-Registry(Registry)
-end
-
-end
-
-classDef trainee fill:#6ADA6A, stroke-width:3px
-classDef middle fill:#FF9900, stroke-width:3px
-
-class List trainee;
-class tuple trainee;
-class dict trainee;
-class set trainee;
-class array trainee;
-class bytes trainee;
-class deque trainee;
-class heap trainee;
-class range trainee;
-class string trainee;
-class datetime trainee;
-class slice trainee;
-class sort trainee;
-class sorted trainee;
-class listcomprehension trainee;
-class bisect trainee;
-class fmap trainee;
-class ffilter trainee;
-class freduce trainee;
-class String_Built-in_Functions trainee;
-class encode trainee;
-class decode trainee;
-class Read_Write trainee;
-class Text_Binary trainee;
-class JSON trainee;
-class paths trainee;
-class Data_Built-in_Functions trainee;
-class icount trainee;
-class icycle trainee;
-class irepeat trainee;
-class pairwise trainee;
-class product trainee;
-class combinations trainee;
-class enumerate trainee;
-class generator trainee;
-class decorator trainee;
-class context trainee;
-class oopBase1 trainee;
-class oop_property trainee;
-class staticmethod trainee;
-class classmethod trainee;
-class slots trainee;
-class Comparable trainee;
-class Hashable trainee;
-class Sortable trainee;
-class Iterable trainee;
-class Collection trainee;
-class shallow trainee;
-class deep trainee;
-class objInheritance trainee;
-class Multiple_Inheritance trainee;
-class MRO trainee;
-class reference_counting trainee;
-class garbage_collector trainee;
-class GIL trainee;
-class args_kwargs trainee;
-class lambda trainee;
-class exception_handling trainee;
-class built_in_exceptions trainee;
-class exception_raising trainee;
-class create_task trainee;
-class gather trainee;
-class wait_for trainee;
-class asQueue trainee;
-class Lock trainee;
-class Event trainee;
-class variables trainee;
-class Thread trainee;
-class Pool trainee;
-class Logging trainee;
-class Stopwatch trainee;
-class timeit trainee;
-class Random trainee;
-class input trainee;
-class Command_Line_Arguments trainee;
-class simple_print trainee;
-class MD5 trainee;
-class AES trainee;
-class pytest trainee;
-class FizzBuzz trainee;
-class BubbleSort trainee;
-class QuickSort trainee;
-class RadixSort trainee;
-class Adjacency_Matrix trainee;
-class Adjacency_List trainee;
-class Linear_Search trainee;
-class Binary_Search trainee;
-class DFS trainee;
-class bigo trainee;
-class divide_and_conquer trainee;
-class Greedy_algorithm trainee;
-class Recursion trainee;
-class Relational_model trainee;
-class Transaction trainee;
-class Isolation trainee;
-class PostgreSQL_benefits trainee;
-class peewee trainee;
-class CREATE trainee;
-class ALTER trainee;
-class DROP trainee;
-class SELECT trainee;
-class INSERT trainee;
-class UPDATE trainee;
-class DELETE trainee;
-class SQLite trainee;
-class Flask trainee;
-class Consistency trainee;
-class HTTPS trainee;
-class requests trainee;
-class websocket trainee;
-class GitHub_Actions trainee;
-class WhatIsArch trainee;
-class SRP trainee;
-class OCP trainee;
-class LSP trainee;
-class ISP trainee;
-class DIP trainee;
-class coupling_vs_cohesion trainee;
-class Procedural trainee;
-class parObject-oriented trainee;
-class ooInheritance trainee;
-class Encapsulation trainee;
-class Polymorphism trainee;
-class Abstraction trainee;
-class trunk_based_development trainee;
-class aiohttp trainee;
-
-class NoSQL middle;
-class Functional middle;
-class RabbitMQ middle;
-class Scrum middle;
-class Apache_Kafka middle;
-class git middle;
-class Linux middle;
-class Docker middle;
-class methmore middle;
-class PostgreSQL_more middle;
-class SQLAlchemy middle;
-class Django middle;
-class FastAPI middle;
-class ORM boldmiddleed;
-class TensorFlow middle;
-class Keras middle;
-class cryptomore middle;
-class Jenkins middle;
-class Kubernetes middle;
-class Architectural_Patterns middle;
-
-```
-```mermaid
-flowchart TD
-
-subgraph Language_Skeleton
-direction LR
-Garbage_Collector -.-> Exception -.-> Introspection -.-> Other
-
-subgraph Garbage_Collector
-direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
-end
-
-subgraph Exception
-direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
-end
-
-subgraph Introspection
-direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
-end
-
-subgraph Other
-direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
-end
-
-end
-
-classDef trainee fill:#6ADA6A, stroke-width:3px
-classDef middle fill:#FF9900, stroke-width:3px
-
-class List trainee;
-class tuple trainee;
-class dict trainee;
-class set trainee;
-class array trainee;
-class bytes trainee;
-class deque trainee;
-class heap trainee;
-class range trainee;
-class string trainee;
-class datetime trainee;
-class slice trainee;
-class sort trainee;
-class sorted trainee;
-class listcomprehension trainee;
-class bisect trainee;
-class fmap trainee;
-class ffilter trainee;
-class freduce trainee;
-class String_Built-in_Functions trainee;
-class encode trainee;
-class decode trainee;
-class Read_Write trainee;
-class Text_Binary trainee;
-class JSON trainee;
-class paths trainee;
-class Data_Built-in_Functions trainee;
-class icount trainee;
-class icycle trainee;
-class irepeat trainee;
-class pairwise trainee;
-class product trainee;
-class combinations trainee;
-class enumerate trainee;
-class generator trainee;
-class decorator trainee;
-class context trainee;
-class oopBase1 trainee;
-class oop_property trainee;
-class staticmethod trainee;
-class classmethod trainee;
-class slots trainee;
-class Comparable trainee;
-class Hashable trainee;
-class Sortable trainee;
-class Iterable trainee;
-class Collection trainee;
-class shallow trainee;
-class deep trainee;
-class objInheritance trainee;
-class Multiple_Inheritance trainee;
-class MRO trainee;
-class reference_counting trainee;
-class garbage_collector trainee;
-class GIL trainee;
-class args_kwargs trainee;
-class lambda trainee;
-class exception_handling trainee;
-class built_in_exceptions trainee;
-class exception_raising trainee;
-class create_task trainee;
-class gather trainee;
-class wait_for trainee;
-class asQueue trainee;
-class Lock trainee;
-class Event trainee;
-class variables trainee;
-class Thread trainee;
-class Pool trainee;
-class Logging trainee;
-class Stopwatch trainee;
-class timeit trainee;
-class Random trainee;
-class input trainee;
-class Command_Line_Arguments trainee;
-class simple_print trainee;
-class MD5 trainee;
-class AES trainee;
-class pytest trainee;
-class FizzBuzz trainee;
-class BubbleSort trainee;
-class QuickSort trainee;
-class RadixSort trainee;
-class Adjacency_Matrix trainee;
-class Adjacency_List trainee;
-class Linear_Search trainee;
-class Binary_Search trainee;
-class DFS trainee;
-class bigo trainee;
-class divide_and_conquer trainee;
-class Greedy_algorithm trainee;
-class Recursion trainee;
-class Relational_model trainee;
-class Transaction trainee;
-class Isolation trainee;
-class PostgreSQL_benefits trainee;
-class peewee trainee;
-class CREATE trainee;
-class ALTER trainee;
-class DROP trainee;
-class SELECT trainee;
-class INSERT trainee;
-class UPDATE trainee;
-class DELETE trainee;
-class SQLite trainee;
-class Flask trainee;
-class Consistency trainee;
-class HTTPS trainee;
-class requests trainee;
-class websocket trainee;
-class GitHub_Actions trainee;
-class WhatIsArch trainee;
-class SRP trainee;
-class OCP trainee;
-class LSP trainee;
-class ISP trainee;
-class DIP trainee;
-class coupling_vs_cohesion trainee;
-class Procedural trainee;
-class parObject-oriented trainee;
-class ooInheritance trainee;
-class Encapsulation trainee;
-class Polymorphism trainee;
-class Abstraction trainee;
-class trunk_based_development trainee;
-class aiohttp trainee;
-
-class NoSQL middle;
-class Functional middle;
-class RabbitMQ middle;
-class Scrum middle;
-class Apache_Kafka middle;
-class git middle;
-class Linux middle;
-class Docker middle;
-class methmore middle;
-class PostgreSQL_more middle;
-class SQLAlchemy middle;
-class Django middle;
-class FastAPI middle;
-class ORM boldmiddleed;
-class TensorFlow middle;
-class Keras middle;
-class cryptomore middle;
-class Jenkins middle;
-class Kubernetes middle;
-class Architectural_Patterns middle;
-
-```
 ```mermaid
 flowchart TD
 
@@ -2065,6 +1294,12 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Общая практика
+
+Описание распространенных подходов, используемых практически во всех программных проектах, и не только на Python. Ввод-вывод, профилирование, логгирование применимо обсолютно везде.
+
+Тестирование вообще составляет отдельную профессию, и часто о качестве программного продукта можно судить по тестовому покрытию исходного кода. С умом (но и без фанатизма) используемй pytest служит лучшим гарантом вашего крепкого сна по ночам, кроме шуток!
+
 ```mermaid
 flowchart TD
 
@@ -2266,6 +1501,10 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Алгоритмы
+
+Одна из тех областей человеческого знания, в которую можно углубляться бесконечно. Но, с другой стороны, кривая изучения этой дисциплины для покрытия практических нужд среднего программиста давно известна, так что начальные стадии не должны составить для вас особого труда. Кто знает, может быть, вам это так понравится и затянет, что со временем вы даже сможете сказать новое веское слово в дискуссии «[Равенство классов P и NP](https://en.wikipedia.org/wiki/P_versus_NP_problem)»?
+
 ```mermaid
 flowchart TD
 
@@ -2468,6 +1707,12 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Базы данных
+
+Изучите сначала общие понятия, а потом специфику работы с конкретными системами управления базами данных. Попробуйте поработать с SQLite, даже если позже вы перейдете на PostgreSQL, SQLite может использоваться как локальная система хранения промежуточных данных. Попробуйте, кстати, ненадолго вернуться к главе первой, «Структуры данных», попробуйте разобраться, как и почему устроены внутренности баз данных.
+
+Здесь, кстати, расположена еще одна дверь в «параллельные миры». Может быть вы захотите связать свое будущее с базами данных, став [DBA](https://en.wikipedia.org/wiki/Database_administrator)?
+
 ```mermaid
 flowchart TD
 
@@ -2686,6 +1931,10 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Сеть
+
+Попробуйте сделать клиента и сервер, «подергайте» какой-нибудь популярный сайт или открытое API. Тут вы, кстати, вполне можете поэксперементировать с HTML, CSS и даже с Java(Type)Script. Кто знает, может быть, ваш вариант — стать фуллстек программистом, сочетающим бек и фронт?
+
 ```mermaid
 flowchart TD
 
@@ -2872,6 +2121,15 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Архитектура
+
+Пожалуйста, постарайтесь не заучивать архитектурные принципы наизусть, это не бессмертные стихи Александра «Наше Всё» Пушкина. Никому еще не прибавляло ума бубнение о том, что «Принцип подстановки Барбары Лисков означает, что если S является подтипом T, тогда объекты типа T в программе могут быть...».  
+Просто попробуйте приложить LSP к той программе, которую пишете. Что вам даст соблюдение этого принципа? Какие проблемы последуют за его несоблюдением? Какую цену придётся заплатить за его имплементацию и поддержку?
+
+Попробуйте поиграться с фукнкциональной парадигмой. Применение функционального подхода и его практическое использование вполне возможно не только в Haskell или F#, но и в Python, причём совершенно не обязательно делать это только в рамках functools.
+
+Попробуйте понять, с какими конкретными, осязаемыми проблемами старых парадигм столкнулись разработчики Agile или популяризаторы микросервисной архитектуры. Разберитесь, чем плох main(), который вызывает все остальные процедуры, ведь в эмбеддед программировании это распространенная практика. Взвесьте цену дополнительных слоёв абстракции, наворачиваемых между корневой бизнес-логикой и внешним миром.
+
 ```mermaid
 flowchart TD
 
@@ -3085,6 +2343,10 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Развёртывание и администрирование
+
+Несмотря на то, что темы «git» и «Linux» закрашены оранжевым (и это действительно весьма объемные пункты), но начало кривой обучения у них не очень крутое, поэтому я крайне рекомедую начать освоение DevOps с освоения git'а (хотя бы в объёме add-commit-push, так у вас останется неидеальная, но всё же история изменений) и Linux (в объёме PuTTY + WinSCP, например, скопируйте ваши py-файлы через SSH и запустите их на удалённой машине). На Stepik'е, например, есть прекрасные русскоязычные курсы, подробно объясняющие, кто на ком стоял, а уж сосчитать хорошие англоязычные мануалы по этим тематикам не хватит пальцев у самого распоясовшегося мутанта.
+
 ```mermaid
 flowchart TD
 
@@ -3267,6 +2529,8 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Суммарная диаграмма
+
 ```mermaid
 flowchart TD
 Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practice ==> Algorithms ==> SQL ==> Net ==> Architecture ==> DevOps
@@ -4015,4 +3279,15 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
+## Пока всё
+
+Как вы могли заметить, в этом материале нет ни слова на темы «управляющие конструкции», «установка IDE» или «virtualenv». Все эти темы, на мой взгляд, весьма немаловажны, но не составляют сути языка, представляя что-то вроде связуещего раствора, в то время как темы, обсуждаемые в статье — от «list» до «Kubernetes», служат полноценными «кирпичами».
+
+В этой статье 100 % есть ошибки и неточности самых разных калибров, а также, само-собой, забыты многие необходимые подразделы; так что, если что-то углядите, не стесняйтесь выражаться в личку, в комментариях, на почту war4one@gmail.com, а если чувствуете в себе Силу — смело форкайте [репу](https://github.com/amaargiru/pyroad) и пишите туда всё, что считаете нужным, все исправления и дополнения бурно приветствуются.
+
+Я сейчас готовлю следующую публикацию для «Хабра», с массой практических примеров, исходные тексты лежат на [github/amaargiru/pycore](https://github.com/amaargiru/pycore) в формате Jupiter Notebook, который позволяет перемешивать текстовые заметки, исходные коды и результаты вывода программ. Все примеры кода интерактивны, вы можете их менять, дополнять и вообще крутить как угодно, разбираясь в тонкостях Python. На GitHub лежит только черновик, так что где-то с середины повествование начинает зажевываться, заикаться, но попрактиковаться на материале нескольких первых глав уже вполне возможно.
+
+Отдельной строкой я приветствую всех начинающих программистов. Не верьте сладким обещаниям всевозможных курсов, публикующим уже на главной ваши будущие расценки; на самом деле, если вам, при должном упорстве, удастся устроиться на работу по профилю, то первое время зарабатывать вы будете примерно ничего и еще звездюлей в придачу. Но — на каких бы языках вы не планировали писать, как бы далеко вы не продвинулись в этом трудном деле, вы совершенно точно устроите апгрейд своему мозгу, апните понимание окружающего мира и начнете различать тайные ходы там, где раньше видели только глухие стены. Так что самое время открыть IDE, немного сосредоточится и начать практиковаться.
+
+И — помните: «Это мой Питон. Таких питонов много, но этот — мой. Мой Питон — мой лучший друг. Он — моя жизнь. Я должен научиться владеть им так же, как я владею своей жизнью. Без меня мой Питон бесполезен. Без моего Питона бесполезен я. Я и мой Питон знаем, на что идёт счет в этой жизни — не на количество сказанных нами слов, не на количество строк кода и не на время, проведенное в офисе. Мы знаем, что счёт будет вестись только на закрытые таски. И мы будем их закрывать. Мой Питон — это человек, такой же как я, потому что это мой Питон. Я должен относиться к нему как к своему брату, я должен изучить его слабости и его силу, его части и принадлежности, его стандартную библиотеку и его инфраструктуру. Я должен хранить его от губительного недопонимания и от неоптимального использования так же, как я храню от всякого вреда свои ноги и руки, свои глаза и своё сердце. Я должен хранить свого Питона чистым и готовым. Мы станем частью друг друга. Да будет так.»
 

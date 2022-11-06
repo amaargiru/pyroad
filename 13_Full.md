@@ -1,3 +1,5 @@
+## Суммарная диаграмма
+
 ```mermaid
 flowchart TD
 Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practice ==> Algorithms ==> SQL ==> Net ==> Architecture ==> DevOps
