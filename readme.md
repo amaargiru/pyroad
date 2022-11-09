@@ -1,6 +1,6 @@
 ## Пайтон Джуньор Плюс, или путеводитель начинающего Python-программиста
 
-Добрый день! Меня зовут Михаил Емельянов, по профессии я программист программ, а эту небольшой путеводитель по возможностям языка Python меня сподвиг написать довольно существенный, на мой взгляд, разрыв между декларируемыми объемами всевозможных курсов программирования и требованиями реальных, даже достаточно скромнооплачиваеых вакансий, а также некоторая обобщенность подобных Python-путеводителей, найденных мной на просторах Сети.
+Добрый день! Меня зовут Михаил Емельянов, по профессии я программист программ, а этот небольшой путеводитель по возможностям языка Python меня сподвиг написать довольно существенный, на мой взгляд, разрыв между декларируемыми объемами всевозможных курсов программирования и требованиями реальных, даже достаточно скромнооплачиваеых вакансий, а также некоторая обобщенность существующих Python-путеводителей, найденных на просторах Сети.
 
 Особенно выбивают из равновесия советы изучить, скажем, «Алгоритмы и структуры данных» или «SQL». Да зубы можно сточить, изучая эти темы, и даже будучи седовласым старцем, постоянно открывать для себя что-то новое, не выходя за рамки тематики «Алгоритмов»!
 
@@ -8,7 +8,7 @@
 
 Пользоваться путеводителем очень просто. Как в обычном тексте, идите слева направо и сверху вниз. Если вы только начинаете изучать Python, то идите по зеленым пунктам путеводителя. Если накопленный опыт, любопытство или необходимость толкают вас глубже, начните изучать разделы, помеченные серым. Оранжевым помечены темы, требующие углубленного изучения, ими лучше заняться (хотя бы и не копая, для начала, особенно глубоко) в третий проход.
 
-В этой статье 100 % есть ошибки и неточности самых разных калибров, а также, само-собой, забыты многие необходимые подразделы; так что, если что-то углядите, не стесняйтесь выражаться в личку, в комментариях, на почту war4one@gmail.com, а если чувствуете в себе Силу — смело форкайте [GitHub-репозиторий](https://github.com/amaargiru/pyroad) с исходными текстами путеводителя и пишите туда всё, что считаете нужным, все исправления и дополнения бурно приветствуются. Там же есть все части карты в формате [Mermaid-диаграмм](https://habr.com/ru/post/652867/), а также в виде png/svg иллюстраций.
+В этой статье 100 % есть ошибки и неточности самых разных калибров, а также, само-собой, забыты многие необходимые подразделы; так что, если что-то углядите, не стесняйтесь выражаться в личку, в комментариях, на почту war4one@gmail.com, а если чувствуете в себе Силу — смело форкайте [GitHub-репозиторий](https://github.com/amaargiru/pyroad) с исходными текстами путеводителя и пишите туда всё, что считаете нужным; все исправления и дополнения бурно приветствуются. Там же есть все части карты в формате [Mermaid-диаграмм](https://habr.com/ru/post/652867/), а также в виде png/svg иллюстраций.
 
 Погружаясь в Python, не забывайте про прекрасную официальную документацию [docs.python.org](https://docs.python.org/). Изучив её, хотя бы по диагонали, и постепенно углубляясь в нужные разделы, вы сможете убедиться, что многие «хаки», «открытия» и прочие неочевидные вещи уже давно разжеваны, описаны и имеют подробные примеры применения.
 
@@ -1306,7 +1306,8 @@ class Architectural_Patterns middle;
 
 Описание распространенных подходов, используемых практически во всех программных проектах, и не только на Python. Ввод-вывод, профилирование, логгирование применимо абсолютно везде.
 
-Тестирование вообще составляет отдельную профессию, и часто о качестве программного продукта можно судить по тестовому покрытию исходного кода. С умом (но и без фанатизма) используемый pytest служит лучшим гарантом вашего крепкого сна по ночам, кроме шуток!
+Тестирование вообще составляет отдельную профессию, и часто о качестве программного продукта можно судить по тестовому покрытию исходного кода. Например, код базы данных SQLite [покрыт](https://www.sqlite.org/testing.html) тестами на 100 %, а на одну строку «боевого» кода приходится 608 строк тестов.  
+Проекты со стопроцентным покрытием встречаются не часто, но с умом используемый pytest служит лучшим гарантом вашего крепкого сна по ночам, кроме шуток!  
 
 ```mermaid
 flowchart TD
@@ -1717,21 +1718,21 @@ class Architectural_Patterns middle;
 ```
 ## Базы данных
 
-Изучите сначала общие понятия, а потом специфику работы с конкретными системами управления базами данных. Попробуйте поработать с SQLite, даже если позже вы перейдете на PostgreSQL, SQLite может использоваться как локальная система хранения промежуточных данных.
+Изучите сначала общие понятия, а потом специфику работы с конкретными системами управления базами данных. Попробуйте поработать с SQLite, даже если позже вы планируете перейти на PostgreSQL. SQLite является очень популярной БД, используется в Android, Chromium и еще в десятках популярных проектов. Вы же можете использовать SQLite в качестве удобного локального хранилища, как альтернативу прямой работе с файлами.
 
-Попробуйте, кстати, ненадолго вернуться к главе первой, «Структуры данных», попробуйте разобраться, как и почему устроены внутренности баз данных.
+Попробуйте, кстати, ненадолго вернуться к главе первой, «Структуры данных» и разобраться, как и почему устроены внутренности баз данных.
 
 Здесь, кстати, расположена еще одна дверь в «параллельные миры». Может быть вы захотите связать свое будущее с базами данных, став [DBA](https://en.wikipedia.org/wiki/Database_administrator)?
 
 ```mermaid
 flowchart TD
 
-subgraph SQL
+subgraph Database
 direction LR
 
-DB_Basics -.-> SQL_Commands -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM
+Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
 
-subgraph DB_Basics
+subgraph Database_basics
 direction LR
 Relational_model("Relational model")
 Transaction(Transaction)
@@ -1744,13 +1745,15 @@ SQL_injection("SQL injection")
 NoSQL(NoSQL)
 end
 
-subgraph SQL_Commands
+subgraph SQL
 direction LR
 
 subgraph DDL
 CREATE(CREATE)
 ALTER(ALTER)
 DROP(DROP)
+PRIMARY_KEY("PRIMARY KEY")
+FOREIGN_KEY("FOREIGN KEY")
 ddlmore("...")
 end
 
@@ -1759,15 +1762,25 @@ SELECT(SELECT)
 INSERT(INSERT)
 UPDATE(UPDATE)
 DELETE(DELETE)
+FROM(FROM)
+WHERE(WHERE)
+SET(SET)
+
 dmlmore("...")
 end
 
 DCL(DCL)
 TCL(TCL)
+SQL_standard("SQL standard")
 
 end
 
-SQLite(SQLite)
+subgraph SQLite
+direction LR
+SQLite_benefits("SQLite benefits")
+Syntax_Diagrams("Syntax Diagrams")
+DB_Browser_for_SQLite("DB Browser for SQLite")
+end
 
 subgraph MySQL
 direction LR
@@ -1777,6 +1790,7 @@ end
 subgraph PostgreSQL
 direction LR
 PostgreSQL_benefits("PostgreSQL benefits")
+psql(psql)
 pgAdmin(pgAdmin)
 PostgreSQL_more("...")
 end
@@ -1785,10 +1799,12 @@ subgraph ORM
 direction LR
 peewee(peewee)
 SQLAlchemy(SQLAlchemy)
+Django_ORM("Django ORM")
 end
 
-end
+Analyze_an_execution_plan("Analyze an execution plan")
 
+end
 classDef trainee fill:#6ADA6A, stroke-width:3px
 classDef middle fill:#FF9900, stroke-width:3px
 
@@ -1896,7 +1912,13 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class SQLite trainee;
+class PRIMARY_KEY trainee;
+class FOREIGN_KEY trainee;
+class FROM trainee;
+class WHERE trainee;
+class SET trainee;
+class SQLite_benefits trainee;
+class Syntax_Diagrams trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -1930,16 +1952,17 @@ class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
+class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class ORM boldmiddleed;
+class SQL_standard middle;
+class Analyze_an_execution_plan middle;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
-
 ```
 ## Сеть
 
@@ -2543,11 +2566,11 @@ class Architectural_Patterns middle;
 ```
 ## Общая диаграмма
 
-Суммарную диаграмму мы получим простым механическим сложением предыдущих пунктов, просто чтобы вы могли посмотреть на то, что у нас в результате получилось.
+Суммарную диаграмму мы получим простым механическим сложением предыдущих пунктов, просто чтобы вы могли посмотреть на то, что у нас в результате получилось. Финальные [Mermaid](https://github.com/amaargiru/pyroad/blob/main/13_Full.md), [svg](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_svg/13_Full.svg), [png](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_png/13_Full.png).
 
 ```mermaid
 flowchart TD
-Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practice ==> Algorithms ==> SQL ==> Net ==> Architecture ==> DevOps
+Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practice ==> Algorithms ==> Database ==> Net ==> Architecture ==> DevOps
 
 subgraph Data_Structures
 direction LR
@@ -2962,12 +2985,12 @@ end
 
 end
 
-subgraph SQL
+subgraph Database
 direction LR
 
-DB_Basics -.-> SQL_Commands -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM
+Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
 
-subgraph DB_Basics
+subgraph Database_basics
 direction LR
 Relational_model("Relational model")
 Transaction(Transaction)
@@ -2980,13 +3003,15 @@ SQL_injection("SQL injection")
 NoSQL(NoSQL)
 end
 
-subgraph SQL_Commands
+subgraph SQL
 direction LR
 
 subgraph DDL
 CREATE(CREATE)
 ALTER(ALTER)
 DROP(DROP)
+PRIMARY_KEY("PRIMARY KEY")
+FOREIGN_KEY("FOREIGN KEY")
 ddlmore("...")
 end
 
@@ -2995,15 +3020,25 @@ SELECT(SELECT)
 INSERT(INSERT)
 UPDATE(UPDATE)
 DELETE(DELETE)
+FROM(FROM)
+WHERE(WHERE)
+SET(SET)
+
 dmlmore("...")
 end
 
 DCL(DCL)
 TCL(TCL)
+SQL_standard("SQL standard")
 
 end
 
-SQLite(SQLite)
+subgraph SQLite
+direction LR
+SQLite_benefits("SQLite benefits")
+Syntax_Diagrams("Syntax Diagrams")
+DB_Browser_for_SQLite("DB Browser for SQLite")
+end
 
 subgraph MySQL
 direction LR
@@ -3013,6 +3048,7 @@ end
 subgraph PostgreSQL
 direction LR
 PostgreSQL_benefits("PostgreSQL benefits")
+psql(psql)
 pgAdmin(pgAdmin)
 PostgreSQL_more("...")
 end
@@ -3021,7 +3057,10 @@ subgraph ORM
 direction LR
 peewee(peewee)
 SQLAlchemy(SQLAlchemy)
+Django_ORM("Django ORM")
 end
+
+Analyze_an_execution_plan("Analyze an execution plan")
 
 end
 
@@ -3248,7 +3287,13 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class SQLite trainee;
+class PRIMARY_KEY trainee;
+class FOREIGN_KEY trainee;
+class FROM trainee;
+class WHERE trainee;
+class SET trainee;
+class SQLite_benefits trainee;
+class Syntax_Diagrams trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -3282,16 +3327,17 @@ class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
+class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class ORM boldmiddleed;
+class SQL_standard middle;
+class Analyze_an_execution_plan middle;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
-
 ```
 ## Пока всё
 
