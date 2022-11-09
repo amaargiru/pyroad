@@ -1,6 +1,6 @@
 ## Многопоточность и многопроцессорность
 
-Прежде чем погрузиться в изучение многопоточности и многопроцессорной обработки данных, обязательно изучите их типовые сценарии использования. Возможны ситуации, когда выигрыш будет минимальным или будет отсутствовать вовсе.
+Прежде чем погрузиться в изучение многопоточности и многопроцессной обработки данных, обязательно изучите их типовые сценарии использования. Возможны ситуации, когда выигрыш будет минимальным или будет отсутствовать вовсе.
 
 Попробуйте реализовать совместную быструю обработку данных и ожидание пользовательского ввода, меняющего исходные данные для расчетов, это даст вам понимание возможностей, плюсов и минусов разных подходов.
 
@@ -24,9 +24,10 @@ end
 subgraph asyncio
 direction LR
 subgraph High_level_API
+sleep(sleep)
+run(run)
 create_task(create_task)
 gather(gather)
-wait_for(wait_for)
 hilapi_more("...")
 end
 subgraph asyncio_Queues
@@ -133,6 +134,8 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
+class sleep trainee;
+class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -175,7 +178,13 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class SQLite trainee;
+class PRIMARY_KEY trainee;
+class FOREIGN_KEY trainee;
+class FROM trainee;
+class WHERE trainee;
+class SET trainee;
+class SQLite_benefits trainee;
+class Syntax_Diagrams trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -209,14 +218,15 @@ class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
+class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class ORM boldmiddleed;
+class SQL_standard middle;
+class Analyze_an_execution_plan middle;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
-
 ```

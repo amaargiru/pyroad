@@ -282,9 +282,10 @@ end
 subgraph asyncio
 direction LR
 subgraph High_level_API
+sleep(sleep)
+run(run)
 create_task(create_task)
 gather(gather)
-wait_for(wait_for)
 hilapi_more("...")
 end
 subgraph asyncio_Queues
@@ -679,6 +680,8 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
+class sleep trainee;
+class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
