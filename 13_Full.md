@@ -332,7 +332,15 @@ direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
 
-Logging(Logging)
+subgraph Logging
+direction LR
+StreamHandler(StreamHandler)
+ColoredFormatter(ColoredFormatter)
+Log_formatting("Log formatting")
+RotatingFileHandler(RotatingFileHandler)
+TimedRotatingFileHandler(TimedRotatingFileHandler)
+ELK_Stack("ELK Stack")
+end
 
 subgraph Profiling
 direction LR
@@ -342,7 +350,11 @@ timeit
 Call_Graph("Call Graph")
 end
 
-Random(Random)
+subgraph Random
+direction LR
+random_mod(random)
+secrets(secrets)
+end
 
 subgraph Input
 direction LR
@@ -354,8 +366,8 @@ end
 subgraph Print
 direction LR
 simple_print(print)
-json_print("json print")
-Pretty_Print("Pretty Print")
+json_print("json.dumps")
+Pretty_Print(pprint)
 end
 
 subgraph Cryptography
@@ -689,10 +701,9 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
-class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class Random trainee;
+class random_mod trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -752,6 +763,7 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
+class StreamHandler trainee;
 
 class NoSQL middle;
 class Functional middle;
@@ -775,4 +787,5 @@ class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
+class ELK_Stack middle;
 ```

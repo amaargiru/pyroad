@@ -1106,9 +1106,10 @@ end
 subgraph asyncio
 direction LR
 subgraph High_level_API
+sleep(sleep)
+run(run)
 create_task(create_task)
 gather(gather)
-wait_for(wait_for)
 hilapi_more("...")
 end
 subgraph asyncio_Queues
@@ -1215,6 +1216,8 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
+class sleep trainee;
+class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -1257,7 +1260,13 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class SQLite trainee;
+class PRIMARY_KEY trainee;
+class FOREIGN_KEY trainee;
+class FROM trainee;
+class WHERE trainee;
+class SET trainee;
+class SQLite_benefits trainee;
+class Syntax_Diagrams trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -1291,16 +1300,17 @@ class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
+class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class ORM boldmiddleed;
+class SQL_standard middle;
+class Analyze_an_execution_plan middle;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
-
 ```
 ## Общая практика
 
@@ -1317,7 +1327,15 @@ direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
 
-Logging(Logging)
+subgraph Logging
+direction LR
+StreamHandler(StreamHandler)
+ColoredFormatter(ColoredFormatter)
+Log_formatting("Log formatting")
+RotatingFileHandler(RotatingFileHandler)
+TimedRotatingFileHandler(TimedRotatingFileHandler)
+ELK_Stack("ELK Stack")
+end
 
 subgraph Profiling
 direction LR
@@ -1327,7 +1345,11 @@ timeit
 Call_Graph("Call Graph")
 end
 
-Random(Random)
+subgraph Random
+direction LR
+random_mod(random)
+secrets(secrets)
+end
 
 subgraph Input
 direction LR
@@ -1339,8 +1361,8 @@ end
 subgraph Print
 direction LR
 simple_print(print)
-json_print("json print")
-Pretty_Print("Pretty Print")
+json_print("json.dumps")
+Pretty_Print(pprint)
 end
 
 subgraph Cryptography
@@ -1360,6 +1382,7 @@ end
 
 classDef trainee fill:#6ADA6A, stroke-width:3px
 classDef middle fill:#FF9900, stroke-width:3px
+
 
 class List trainee;
 class tuple trainee;
@@ -1423,6 +1446,8 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
+class sleep trainee;
+class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -1430,10 +1455,9 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
-class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class Random trainee;
+class random_mod trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -1465,7 +1489,13 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class SQLite trainee;
+class PRIMARY_KEY trainee;
+class FOREIGN_KEY trainee;
+class FROM trainee;
+class WHERE trainee;
+class SET trainee;
+class SQLite_benefits trainee;
+class Syntax_Diagrams trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -1487,6 +1517,7 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
+class StreamHandler trainee;
 
 class NoSQL middle;
 class Functional middle;
@@ -1499,16 +1530,18 @@ class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
+class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class ORM boldmiddleed;
+class SQL_standard middle;
+class Analyze_an_execution_plan middle;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
-
+class ELK_Stack middle;
 ```
 ## Алгоритмы
 
@@ -2898,7 +2931,15 @@ direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
 
-Logging(Logging)
+subgraph Logging
+direction LR
+StreamHandler(StreamHandler)
+ColoredFormatter(ColoredFormatter)
+Log_formatting("Log formatting")
+RotatingFileHandler(RotatingFileHandler)
+TimedRotatingFileHandler(TimedRotatingFileHandler)
+ELK_Stack("ELK Stack")
+end
 
 subgraph Profiling
 direction LR
@@ -2908,7 +2949,11 @@ timeit
 Call_Graph("Call Graph")
 end
 
-Random(Random)
+subgraph Random
+direction LR
+random_mod(random)
+secrets(secrets)
+end
 
 subgraph Input
 direction LR
@@ -2920,8 +2965,8 @@ end
 subgraph Print
 direction LR
 simple_print(print)
-json_print("json print")
-Pretty_Print("Pretty Print")
+json_print("json.dumps")
+Pretty_Print(pprint)
 end
 
 subgraph Cryptography
@@ -3255,10 +3300,9 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
-class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class Random trainee;
+class random_mod trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -3318,6 +3362,7 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
+class StreamHandler trainee;
 
 class NoSQL middle;
 class Functional middle;
@@ -3341,6 +3386,7 @@ class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
+class ELK_Stack middle;
 ```
 ## Пока всё
 
