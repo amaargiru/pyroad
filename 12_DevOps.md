@@ -14,14 +14,32 @@ direction LR
 Git_flow("Git-flow")
 trunk_based_development("Trunk-based development")
 end
-git(git)
-Linux(Linux)
+
+subgraph git
+direction LR
+Basics(Basics)
+Branching(Branching)
+Tools(Tools)
+GitHub(GitHub)
+end
+
+subgraph Linux
+direction LR
+Install(Install)
+Directory_Structure("Directory Structure")
+Terminal(Terminal)
+Input_Output("Input/Output")
+bash(bash)
+System_administration("System administration")
+Network_administration("Network administration")
+end
 
 subgraph CI_CD
 direction LR
 Continuous_testing("Continuous testing")
 GitHub_Actions("GitHub Actions")
 Jenkins(Jenkins)
+New_Relic("New Relic")
 end
 
 subgraph Containers
@@ -97,6 +115,8 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
+class sleep trainee;
+class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -104,10 +124,9 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
-class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class Random trainee;
+class random_mod trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -139,7 +158,13 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class SQLite trainee;
+class PRIMARY_KEY trainee;
+class FOREIGN_KEY trainee;
+class FROM trainee;
+class WHERE trainee;
+class SET trainee;
+class SQLite_benefits trainee;
+class Syntax_Diagrams trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -161,26 +186,48 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
+class StreamHandler trainee;
+class Observer trainee;
+class Decorator_Method trainee;
+class Factory_Method trainee;
+class Adapter_Facade trainee;
+class CQRS trainee;
+class Decentralization trainee;
+class Smart_endpoints_dumb_pipes trainee;
+class Basics trainee;
+class GitHub trainee;
+class Install trainee;
+class Directory_Structure trainee;
+class Terminal trainee;
 
+class bash middle;
+class System_administration middle;
+class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
-class git middle;
-class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
+class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class ORM boldmiddleed;
+class SQL_standard middle;
+class Analyze_an_execution_plan middle;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
+class Creational_patterns middle;
+class Structural_patterns middle;
+class Behavioral_patterns middle;
 class Architectural_Patterns middle;
-
+class ELK_Stack middle;
+class Pattern_of_Distributed_Systems middle;
+class Cloud_Design_Patterns middle;
+class New_Relic middle;
 ```

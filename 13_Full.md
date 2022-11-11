@@ -635,14 +635,32 @@ direction LR
 Git_flow("Git-flow")
 trunk_based_development("Trunk-based development")
 end
-git(git)
-Linux(Linux)
+
+subgraph git
+direction LR
+Basics(Basics)
+Branching(Branching)
+Tools(Tools)
+GitHub(GitHub)
+end
+
+subgraph Linux
+direction LR
+Install(Install)
+Directory_Structure("Directory Structure")
+Terminal(Terminal)
+Input_Output("Input/Output")
+bash(bash)
+System_administration("System administration")
+Network_administration("Network administration")
+end
 
 subgraph CI_CD
 direction LR
 Continuous_testing("Continuous testing")
 GitHub_Actions("GitHub Actions")
 Jenkins(Jenkins)
+New_Relic("New Relic")
 end
 
 subgraph Containers
@@ -797,14 +815,20 @@ class Adapter_Facade trainee;
 class CQRS trainee;
 class Decentralization trainee;
 class Smart_endpoints_dumb_pipes trainee;
+class Basics trainee;
+class GitHub trainee;
+class Install trainee;
+class Directory_Structure trainee;
+class Terminal trainee;
 
+class bash middle;
+class System_administration middle;
+class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
-class git middle;
-class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
@@ -826,4 +850,5 @@ class Architectural_Patterns middle;
 class ELK_Stack middle;
 class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
+class New_Relic middle;
 ```
