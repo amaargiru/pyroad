@@ -14,7 +14,7 @@ flowchart TD
 
 subgraph Architecture
 direction LR
-WhatIsArch -.-> Principles -.-> Paradigms -.-> Object-oriented -.-> Practices -.-> Architectural_Patterns -.-> Microservices -.-> Messaging
+WhatIsArch -.-> Principles -.-> Paradigms -.-> Object-oriented -.-> Design_Patterns -.-> Microservices -.-> System_Design -.-> Practices
 
 WhatIsArch("What is?")
 subgraph Principles
@@ -28,10 +28,10 @@ ISP(ISP)
 DIP(DIP)
 end
 
+coupling_vs_cohesion("Coupling vs cohesion")
 KISS(KISS)
 DRY(DRY)
 YAGNI(YAGNI)
-coupling_vs_cohesion("Coupling vs cohesion")
 
 end
 
@@ -51,22 +51,48 @@ Polymorphism(Polymorphism)
 Abstraction(Abstraction)
 end
 
-subgraph Practices
+subgraph Microservices
 direction LR
-Agile(Agile)
-Scrum(Scrum)
-Kanban(Kanban)
-end
 
-Microservices(Microservices)
+Decentralization(Decentralization)
+Smart_endpoints_dumb_pipes("Smart endpoints, dumb pipes")
+Design_for_failure("Design for failure")
 
 subgraph Messaging
 direction LR
 RabbitMQ(RabbitMQ)
 Apache_Kafka("Apache Kafka")
 end
+end
 
-Architectural_Patterns("Architectural Patterns")
+subgraph Design_Patterns
+direction LR
+
+Observer(Observer)
+Decorator_Method(Decorator)
+Factory_Method("Factory Method")
+Adapter_Facade("Adapter, Facade")
+
+Creational_patterns("Creational patterns")
+Structural_patterns("Structural patterns")
+Behavioral_patterns("Behavioral patterns")
+end
+
+subgraph System_Design
+direction LR
+CQRS(CQRS)
+Two_Phase_Commit("Two-Phase Commit")
+Load_Balanced_Services("Load-Balanced Services")
+Pattern_of_Distributed_Systems("Patterns of Distributed Systems")
+Cloud_Design_Patterns("Cloud Design Patterns")
+end
+
+subgraph Practices
+direction LR
+Agile(Agile)
+Scrum(Scrum)
+Kanban(Kanban)
+end
 
 end
 
@@ -135,6 +161,8 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
+class sleep trainee;
+class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -142,10 +170,9 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
-class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class Random trainee;
+class random_mod trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -177,7 +204,13 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class SQLite trainee;
+class PRIMARY_KEY trainee;
+class FOREIGN_KEY trainee;
+class FROM trainee;
+class WHERE trainee;
+class SET trainee;
+class SQLite_benefits trainee;
+class Syntax_Diagrams trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -199,6 +232,14 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
+class StreamHandler trainee;
+class Observer trainee;
+class Decorator_Method trainee;
+class Factory_Method trainee;
+class Adapter_Facade trainee;
+class CQRS trainee;
+class Decentralization trainee;
+class Smart_endpoints_dumb_pipes trainee;
 
 class NoSQL middle;
 class Functional middle;
@@ -211,14 +252,21 @@ class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
+class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class ORM boldmiddleed;
+class SQL_standard middle;
+class Analyze_an_execution_plan middle;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
+class Creational_patterns middle;
+class Structural_patterns middle;
+class Behavioral_patterns middle;
 class Architectural_Patterns middle;
-
+class ELK_Stack middle;
+class Pattern_of_Distributed_Systems middle;
+class Cloud_Design_Patterns middle;
 ```

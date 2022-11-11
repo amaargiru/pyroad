@@ -544,7 +544,7 @@ end
 
 subgraph Architecture
 direction LR
-WhatIsArch -.-> Principles -.-> Paradigms -.-> Object-oriented -.-> Practices -.-> Architectural_Patterns -.-> Microservices -.-> Messaging
+WhatIsArch -.-> Principles -.-> Paradigms -.-> Object-oriented -.-> Design_Patterns -.-> Microservices -.-> System_Design -.-> Practices
 
 WhatIsArch("What is?")
 subgraph Principles
@@ -558,10 +558,10 @@ ISP(ISP)
 DIP(DIP)
 end
 
+coupling_vs_cohesion("Coupling vs cohesion")
 KISS(KISS)
 DRY(DRY)
 YAGNI(YAGNI)
-coupling_vs_cohesion("Coupling vs cohesion")
 
 end
 
@@ -581,22 +581,48 @@ Polymorphism(Polymorphism)
 Abstraction(Abstraction)
 end
 
-subgraph Practices
+subgraph Microservices
 direction LR
-Agile(Agile)
-Scrum(Scrum)
-Kanban(Kanban)
-end
 
-Microservices(Microservices)
+Decentralization(Decentralization)
+Smart_endpoints_dumb_pipes("Smart endpoints, dumb pipes")
+Design_for_failure("Design for failure")
 
 subgraph Messaging
 direction LR
 RabbitMQ(RabbitMQ)
 Apache_Kafka("Apache Kafka")
 end
+end
 
-Architectural_Patterns("Architectural Patterns")
+subgraph Design_Patterns
+direction LR
+
+Observer(Observer)
+Decorator_Method(Decorator)
+Factory_Method("Factory Method")
+Adapter_Facade("Adapter, Facade")
+
+Creational_patterns("Creational patterns")
+Structural_patterns("Structural patterns")
+Behavioral_patterns("Behavioral patterns")
+end
+
+subgraph System_Design
+direction LR
+CQRS(CQRS)
+Two_Phase_Commit("Two-Phase Commit")
+Load_Balanced_Services("Load-Balanced Services")
+Pattern_of_Distributed_Systems("Patterns of Distributed Systems")
+Cloud_Design_Patterns("Cloud Design Patterns")
+end
+
+subgraph Practices
+direction LR
+Agile(Agile)
+Scrum(Scrum)
+Kanban(Kanban)
+end
 
 end
 
@@ -764,6 +790,13 @@ class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
 class StreamHandler trainee;
+class Observer trainee;
+class Decorator_Method trainee;
+class Factory_Method trainee;
+class Adapter_Facade trainee;
+class CQRS trainee;
+class Decentralization trainee;
+class Smart_endpoints_dumb_pipes trainee;
 
 class NoSQL middle;
 class Functional middle;
@@ -786,6 +819,11 @@ class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
+class Creational_patterns middle;
+class Structural_patterns middle;
+class Behavioral_patterns middle;
 class Architectural_Patterns middle;
 class ELK_Stack middle;
+class Pattern_of_Distributed_Systems middle;
+class Cloud_Design_Patterns middle;
 ```
