@@ -2461,20 +2461,17 @@ class Cloud_Design_Patterns middle;
 ```
 ## Развёртывание и администрирование
 
-Несмотря на то, что темы «git» и «Linux» закрашены оранжевым (и это действительно весьма объемные пункты), но начало кривой обучения у них не очень крутое, поэтому я крайне рекомендую начать освоение DevOps с освоения git'а (хотя бы в объёме add-commit-push, так у вас останется неидеальная, но всё же история изменений) и Linux (в объёме PuTTY + WinSCP, например, скопируйте ваши py-файлы через SSH и запустите их на удалённой машине). На Stepik'е, например, есть прекрасные русскоязычные курсы, подробно объясняющие, кто на ком стоял, а уж сосчитать хорошие англоязычные мануалы по этим тематикам не хватит пальцев у самого распоясавшегося мутанта.
+Несмотря на то, что темы «git» и особенно «Linux» весьма непросты и объемны, начало кривой обучения у них не очень крутое, поэтому я крайне рекомендую начать освоение DevOps с освоения git'а (хотя бы в объёме add-commit-push, так у вас останется неидеальная, но всё же история изменений) и Linux (в объёме PuTTY + WinSCP, например; скопируйте ваши Python-скрипты через SSH и запустите их на удалённой Linux-машине). На Stepik'е, например, есть прекрасные русскоязычные курсы, подробно объясняющие, кто на ком стоял, а уж сосчитать хорошие англоязычные мануалы по этим тематикам не хватит пальцев у самого распоясавшегося мутанта.  
+Поверьте, Linux-консоль, выглядящая на первый взгляд такой непривычной и неудобной, покажется вам гораздо дружелюбнее, когда вы начнете изучать vim. Всё познается в сравнении!  
+
+Что ж, здесь наша карта заканчивается. Попробуйте дойти до последнего зеленого раздела, GitHub Actions; прогоните, например, линтер для своего open source проекта (GitHub Actions бесплатен для проектов с открытым исходным кодом).  
 
 ```mermaid
 flowchart TD
 
 subgraph DevOps
 direction LR
-Development_lifecycle -.-> git -.-> Linux -.-> CI_CD -.-> Containers
-
-subgraph Development_lifecycle
-direction LR
-Git_flow("Git-flow")
-trunk_based_development("Trunk-based development")
-end
+git -.-> Linux -.-> Development_lifecycle -.-> CI_CD -.-> Containers
 
 subgraph git
 direction LR
@@ -2493,6 +2490,12 @@ Input_Output("Input/Output")
 bash(bash)
 System_administration("System administration")
 Network_administration("Network administration")
+end
+
+subgraph Development_lifecycle
+direction LR
+Git_flow("Git-flow")
+trunk_based_development("Trunk-based development")
 end
 
 subgraph CI_CD
@@ -3322,13 +3325,7 @@ end
 
 subgraph DevOps
 direction LR
-Development_lifecycle -.-> git -.-> Linux -.-> CI_CD -.-> Containers
-
-subgraph Development_lifecycle
-direction LR
-Git_flow("Git-flow")
-trunk_based_development("Trunk-based development")
-end
+git -.-> Linux -.-> Development_lifecycle -.-> CI_CD -.-> Containers
 
 subgraph git
 direction LR
@@ -3347,6 +3344,12 @@ Input_Output("Input/Output")
 bash(bash)
 System_administration("System administration")
 Network_administration("Network administration")
+end
+
+subgraph Development_lifecycle
+direction LR
+Git_flow("Git-flow")
+trunk_based_development("Trunk-based development")
 end
 
 subgraph CI_CD

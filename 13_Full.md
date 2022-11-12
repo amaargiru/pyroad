@@ -628,13 +628,7 @@ end
 
 subgraph DevOps
 direction LR
-Development_lifecycle -.-> git -.-> Linux -.-> CI_CD -.-> Containers
-
-subgraph Development_lifecycle
-direction LR
-Git_flow("Git-flow")
-trunk_based_development("Trunk-based development")
-end
+git -.-> Linux -.-> Development_lifecycle -.-> CI_CD -.-> Containers
 
 subgraph git
 direction LR
@@ -653,6 +647,12 @@ Input_Output("Input/Output")
 bash(bash)
 System_administration("System administration")
 Network_administration("Network administration")
+end
+
+subgraph Development_lifecycle
+direction LR
+Git_flow("Git-flow")
+trunk_based_development("Trunk-based development")
 end
 
 subgraph CI_CD
