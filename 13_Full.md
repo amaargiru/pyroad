@@ -134,7 +134,7 @@ end
 subgraph Data_Flows
 direction LR
 
-itertools -.-> enumerate -.-> generator -.-> Decorator -.-> context
+itertools -.-> enumerate -.-> Generator -.-> Decorator -.-> Context_managers
 
 subgraph itertools
 direction LR
@@ -146,21 +146,30 @@ irepeat(repeat)
 end
 
 subgraph Finite_Iterators
-pairwise(pairwise)
+accumulate(accumulate)
 chain(chain)
+compress(compress)
+dropwhile(dropwhile)
+takewhile(takewhile)
 fimore(...)
 end
 
 subgraph Combinatorics
 product(product)
 combinations(combinations)
-combinations_with_replacement(combinations_with_replacement)
 permutations(permutations)
+combinations_with_replacement(combinations_with_replacement)
 end
 end
 
 enumerate(enumerate)
-generator(generator)
+
+subgraph Generator
+direction LR
+yield("yield")
+yield_from("yield from")
+Generator_expression("Generator expression")
+end
 
 subgraph Decorator
 direction LR
@@ -169,7 +178,11 @@ LRUCache("LRU Cache")
 param_decorator("Parameterized decorator")
 end
 
-context("Context manager")
+subgraph Context_managers
+direction LR
+enter_exit_cm("__enter__, __exit__")
+contextlib(contextlib)
+end
 
 end
 
@@ -704,13 +717,12 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
-class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class generator trainee;
+class yield trainee;
 class decorator trainee;
-class context trainee;
+class enter_exit_cm trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -820,6 +832,11 @@ class GitHub trainee;
 class Install trainee;
 class Directory_Structure trainee;
 class Terminal trainee;
+class accumulate trainee;
+class chain trainee;
+class compress trainee;
+class dropwhile trainee;
+class takewhile trainee;
 
 class bash middle;
 class System_administration middle;
