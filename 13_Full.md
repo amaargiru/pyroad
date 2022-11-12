@@ -548,18 +548,20 @@ websocket(websocket)
 
 subgraph Frameworks
 direction LR
-aiohttp(aiohttp)
 Flask(Flask)
+aiohttp(aiohttp)
 Django(Django)
 end
 
 subgraph API
 direction LR
 REST(REST)
+Postman(Postman)
 Authentication(Authentication)
 jwt_tokens("JWT tokens")
 Swagger(Swagger)
 FastAPI(FastAPI)
+GraphQL(GraphQL)
 end
 
 end
@@ -827,7 +829,6 @@ class Encapsulation trainee;
 class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
-class aiohttp trainee;
 class StreamHandler trainee;
 class Observer trainee;
 class Decorator_Method trainee;
@@ -847,7 +848,10 @@ class compress trainee;
 class dropwhile trainee;
 class takewhile trainee;
 class typing_loc trainee;
+class REST trainee;
+class Postman trainee;
 
+class GraphQL middle;
 class bash middle;
 class System_administration middle;
 class Network_administration middle;
