@@ -70,7 +70,7 @@ end
 
 subgraph Data_Management
 direction LR
-slice(slice) -.-> Sorting -.-> Comprehension -.-> bisect(bisect) -.-> Functools -.-> String_Management -.-> Datetime_Management -.->File -.-> Data_Analysis -.-> Neural_Networks
+slice(slice) -.-> Sorting -.-> Comprehension -.-> String_Management -.-> Datetime_Management -.-> bisect(bisect) -.-> Functools -.->File -.-> Data_Analysis -.-> Neural_Networks
 subgraph Sorting
 direction LR
 sort(sort)
@@ -84,15 +84,6 @@ dictcomprehension(dict)
 setcomprehension(set)
 end
 
-subgraph Functools
-direction LR
-fmap(map)
-ffilter(filter)
-freduce(reduce)
-fpartial(partial)
-fmore(...)
-end
-
 subgraph String_Management
 direction LR
 String_Built-in_Functions("Built-in functions")
@@ -104,6 +95,15 @@ direction LR
 encode(encode)
 decode(decode)
 dtmath(math)
+end
+
+subgraph Functools
+direction LR
+fmap(map)
+ffilter(filter)
+freduce(reduce)
+fpartial(partial)
+fmore(...)
 end
 
 subgraph File
