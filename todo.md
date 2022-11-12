@@ -28,7 +28,7 @@
 (+) Уточнить рекомендуемый для первоначального изучения перечень комбинаторных итераторов itertools.  
 (+) В подраздел "Generator" добавить подразделы "yield" (зеленая, т. е. простая опция), "yield from", "Generator expression".  
 (+) Рассмотреть необходимость разбиения раздела "Context manager" на подразделы.  
-(-) В раздел "Language Skeleton" после "Exception" добавить подраздел "Typing" с подразделами "typing", "Protocol", "final (name mangling)", "Literal", "TypedDict".  
+(+) В раздел "Специфика языка" после "Exception" добавить подраздел "Typing" с подразделами "typing", "Protocol", "final (name mangling)", "Literal", "TypedDict".  
 (-) В API после FastAPI добавить GraphQL (оранжевая, т. е. сложная опция).  
 (-) В API после REST добавить Postman (зеленая, т. е. простая опция).  
 (-) Подраздел "API/REST" пометить как зеленую, т. е. простую опцию.  

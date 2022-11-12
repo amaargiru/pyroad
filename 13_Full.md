@@ -243,7 +243,7 @@ end
 
 subgraph Language_Skeleton
 direction LR
-Garbage_Collector -.-> Exception -.-> Introspection -.-> Other
+Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
 
 subgraph Garbage_Collector
 direction LR
@@ -260,6 +260,15 @@ built_in_exceptions("Built-in exceptions")
 exception_raising("Exception raising")
 user_exception("User exceptions")
 exception_object("Exception Object")
+end
+
+subgraph Typing
+direction LR
+typing_loc(typing)
+Protocol(Protocol)
+final("final (name mangling)")
+Literal(Literal)
+TypedDict(TypedDict)
 end
 
 subgraph Introspection
@@ -837,6 +846,7 @@ class chain trainee;
 class compress trainee;
 class dropwhile trainee;
 class takewhile trainee;
+class typing_loc trainee;
 
 class bash middle;
 class System_administration middle;
