@@ -306,12 +306,13 @@ direction LR
 Data_Built-in_Functions("Built-in functions")
 NumPy(NumPy)
 Pandas(Pandas)
+Matplotlib_Seaborn("Matplotlib/Seaborn")
 end
 
 subgraph Neural_Networks
 direction LR
-TensorFlow(TensorFlow)
-Keras(Keras)
+PyTorch(PyTorch)
+TensorFlow("TensorFlow/Keras")
 end
 
 end
@@ -349,13 +350,12 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
-class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class generator trainee;
+class yield trainee;
 class decorator trainee;
-class context trainee;
+class enter_exit_cm trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -451,7 +451,6 @@ class Encapsulation trainee;
 class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
-class aiohttp trainee;
 class StreamHandler trainee;
 class Observer trainee;
 class Decorator_Method trainee;
@@ -465,7 +464,16 @@ class GitHub trainee;
 class Install trainee;
 class Directory_Structure trainee;
 class Terminal trainee;
+class accumulate trainee;
+class chain trainee;
+class compress trainee;
+class dropwhile trainee;
+class takewhile trainee;
+class typing_loc trainee;
+class REST trainee;
+class Postman trainee;
 
+class GraphQL middle;
 class bash middle;
 class System_administration middle;
 class Network_administration middle;
@@ -496,6 +504,7 @@ class ELK_Stack middle;
 class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
+class PyTorch middle;
 ```
 ## Потоки данных
 
@@ -2977,12 +2986,13 @@ direction LR
 Data_Built-in_Functions("Built-in functions")
 NumPy(NumPy)
 Pandas(Pandas)
+Matplotlib_Seaborn("Matplotlib/Seaborn")
 end
 
 subgraph Neural_Networks
 direction LR
-TensorFlow(TensorFlow)
-Keras(Keras)
+PyTorch(PyTorch)
+TensorFlow("TensorFlow/Keras")
 end
 
 end
@@ -3738,6 +3748,7 @@ class ELK_Stack middle;
 class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
+class PyTorch middle;
 ```
 ## Пока всё
 
