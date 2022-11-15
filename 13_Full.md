@@ -121,12 +121,13 @@ direction LR
 Data_Built-in_Functions("Built-in functions")
 NumPy(NumPy)
 Pandas(Pandas)
+Matplotlib_Seaborn("Matplotlib/Seaborn")
 end
 
 subgraph Neural_Networks
 direction LR
-TensorFlow(TensorFlow)
-Keras(Keras)
+PyTorch(PyTorch)
+TensorFlow("TensorFlow/Keras")
 end
 
 end
@@ -882,4 +883,5 @@ class ELK_Stack middle;
 class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
+class PyTorch middle;
 ```
