@@ -1,0 +1,110 @@
+Python Junior Plus, or the Beginner's Guide to Python Programming
+
+Good afternoon! My name is Mikhail Emelyanov, I am software engineer by trade, and I was inspired to write this little guide on the capabilities of Python language by a certain commonality among the existing Python tutorials found on the web.
+
+The usual suggestions to study, say, “Algorithms and Data Structures” or “SQL” are especially jarring. You can spend years studying these topics, and even after decades you'd still be able to find something you didn't know yet even without ever venturing outside the scope of Algorithms!
+
+Using video game analogies, we can say that novice programmers often stand on the shore of the lake of boiling lava with an island with the ever-coveted jobs in the center, while the islands in between, which you have to jump on, gradually increasing your skills in successive mini-quests, are either missing, or arranged haphazardly, or their fairly smooth sequence breaks off, never having managed to get you any farther from the shore. Let's try to build a path of hint islands, a number of which, although not without effort, will finally allow us to reach our goal.
+
+The guide is very easy to use. Just as you would in a normal text, go from left to right and from top to bottom. If you're just starting to learn Python, follow the green sections of the guide. If your accumulated experience, curiosity, or necessity pushes you deeper, start exploring the sections marked in gray. Orange marks the topics that require in-depth study, those are better to tackle (at least without digging especially deep to begin with) on the third pass.
+
+This article definitely contains mistakes and inaccuracies of different calibers, and of course, many required subsections are missing; so, if you notice any of these, feel free to comment, and if you feel the Force, you're welcome to fork the GitHub repository with the guide's source code and contribute whatever you feel is necessary; all corrections and additions are strongly encouraged. It also contains all the parts of the map in Mermaid diagram format, as well as png/svg illustrations.
+
+When diving into Python, don't forget the excellent official documentation at docs.python.org. By studying it, at least in brief, and gradually reading deeper into the right sections, you will be able to see that many of the “hacks”, “findings” and other obscure matters have long since been considered, described and have detailed examples of use.
+
+I would also recommend leetcode.com for learning basic Python syntax to the fullest extent. If you filter the tasks by Easy level, and then add an additional sorting by the Acceptance column, you'll be presented with a straightforward primer with smoothly increasing task difficulty, rather than the intimidating competitive platform.
+
+Well, that’s enough stalling for the moment. Let's get started!
+
+1. Data Structures
+
+As a reminder, if you are a novice developer, go from left to right through the entries marked in green. Create instances of each type, try adding and removing elements, and experiment with them via the debugger. See how big the resulting objects are, and try to figure out why list and array containing the same data are different in size. Study the features of each type, read and figure out which data structure will work best for which tasks.
+
+Don't forget that this is just a guide, a table of contents for a book that you will have to write yourself. Actively seek information on the web, consult sources and official documentation. Explore StackOverflow just for fun, there's plenty of exciting reading there!
+
+If you start to make progress, move on to the next section, and don't feel bad if you can't. Don't envision your mind as the sword of Alexander the Great cutting the Gordian knot in one fluid, precise move, worthy of Instagram's front page. Be as a carpenter’s plane, stripping away one thin layer at a time, and sooner or later the misunderstanding will go away, even if this seems to you to be a chasm ten thousand leagues deep.
+
+2. Data manipulation
+
+Try to manipulate your data, feel how you can mold anything you want out of this malleable clay. Try creating a data structure with many elements (a million, for example), sort them, quickly find the values you want with bisect, and write the results in a JSON file.
+
+If everything goes according to plan, try to dig into the less obvious topics: apply regex to solve some simple task or save previously obtained data in Pickle format, understanding the reason for binary file formats after observing the size of the resulting files.
+
+This is where you will find the first entries marked in orange. Google what TensorFlow and Keras are and what tasks they solve. Perhaps, this could be your future job, your vocation!
+
+3. Data streams
+
+Add more specific capabilities to your data management skills. All of the topics covered are essential in the practical programming process and are present in all modern languages in one form or another. That way, if you eventually switch from Python to Java, C# or C++, the knowledge you've acquired won't become dead weight.
+
+4. Object-oriented programming
+
+Delve into the subject of object-oriented programming. Understand that objects are your friends, and all their features and properties, even if they are not quite intuitive at first glance, have purely utilitarian reasons for existing.
+
+OOP makes it much easier to partition, develop and maintain code, not just making very complex tasks feasible for average programmers, but making the world around us more manageable, predictable and generally better.
+
+5. Language specifics.
+
+Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+
+6. Multithreading and multiprocessing
+
+Before you dive into multithreading and multiprocessing, be sure to study their typical use cases. There may be situations in which the gain is minimal or non-existent.
+
+Try to implement simultaneous fast data processing and waiting for user input, which changes the input data for calculations, so you understand the capabilities, pros and cons of different approaches.
+
+Don't try to use all the features provided by Python at once, stick to the task at hand.
+
+7. Common practices
+
+Description of common methods used in almost all software projects, not just in Python. I/O, profiling, and logging apply universally.
+
+Testing in general constitutes a separate profession, and often the quality of a software product can be judged by the test coverage of the source code. For example, the code of the SQLite database is 100% covered by tests, while one line of "combative" code requires 608 lines of tests.
+Jokes aside, projects with 100% coverage are not common, but pytest used wisely is the best guarantor of your sound sleep at night!
+
+8. Algorithms
+
+One of those areas of human knowledge that you can delve into endlessly. On the other hand, the learning curve of this discipline for covering the practical needs of the average programmer has long been known, so the initial stages shouldn't be too difficult for you. Who knows, maybe you'll enjoy it so much and drag it out that in time you might even be able to contribute a new robust argument in the discussion of equality of P and NP classes!
+
+9. Databases
+
+Learn the general concepts first, and then the specifics of working with specific database management systems. Try working with SQLite, even if you''re planning to switch to PostgreSQL later. SQLite is a very popular database, used in Android, Chromium and dozens of other popular projects. You can use SQLite as a convenient local storage alternative to working with files directly.
+
+By the way, try to briefly return to chapter one, Data Structures, to understand how and why the inner workings of databases are structured.
+
+This also provides yet another door into a "parallel world". Perhaps you would like to tie your future to databases by becoming a DBA?
+
+10. Network
+
+Try to create a client and a server, poke some popular website or an open API. Here you might as well experiment with HTML, CSS, and even Java(Type)Script. Who knows, perhaps your choice would be to become a full-stack programmer, combining back- and frontend development.
+
+11. Architecture
+
+Please try not to memorize architectural principles by heart; they are not Shakespeare's timeless poems. The rambling about how “Barbara Liskow's substitution principle means that if S is a subtype of T, then objects of type T in a program can be...” offers no advantage to anyone.
+Just try applying the same LSP to the program you are writing. What benefit would compliance with this principle give you? What problems will result from not following it? What price will you have to pay for its implementation and support?
+
+Try messing around with the functional paradigm. Applying the functional approach and using it in practice is possible not only in Haskell or F#, but also in Python, and it doesn't have to be done only within functools.
+
+Figure out the reasoning behind the job interviewer's request to “say the three main words” (it's not “I love you”, by the way, it’s “inheritance, encapsulation, polymorphism”) and why this triad should be supplemented with the concept of “level of abstraction”.
+
+Try to understand what specific, tangible problems of the old paradigms the developers of Agile or the popularizers of microservice architecture faced. Figure out what's wrong with main(), which calls all the other procedures, since this is common practice in embedded programming. Weigh the cost of additional layers of abstraction between the root business logic and the outside world.
+
+12. Deployment and administration
+
+Despite the fact that git and especially Linux are quite complicated and extensive topics, the beginning of their learning curve isn't very steep, so I highly recommend starting your DevOps mastering with git (at least the add-commit-push part, so you at least have a revision history, flawed as it is) and Linux (PuTTY + WinSCP, for example; copy your Python scripts via SSH and run them on a remote Linux machine). Fortunately, these days good text and video tutorials covering these topics are about as rare as grains of sand on the beach.
+Take it from me, the Linux console that looks so strange and inconvenient at first sight will seem much more familiar once you start learning vim. Cognition comes through comparison!
+
+Well, this is where our map ends. Try to reach the last green section, GitHub Actions; run a linter on your open source project, for example (GitHub Actions is free for open source projects).
+
+13. Overall chart
+
+The overall chart can be obtained by simply mechanically adding up the previous entries, just so we can see what we've ended up with.
+
+14. That’s all for now
+
+As you may have noticed, there is no mention of control constructs, IDE installation or virtualenv in this guide. In my opinion, all these topics are very important, but do not constitute the essence of the language, representing something like a binding solution, while the topics discussed in the article, from list to Kubernetes, serve as the full-fledged “bricks”.
+
+As a reminder, all the diagrams are made in Mermaid format (you can change the picture just by correcting the text), all the sources are available on GitHub, correct as much as you want, or, of course, leave comments directly in the comments section.
+
+Separately, I welcome all beginner programmers. You will come to realize that working 8 hours in a row using your head and not your hands is hard, too. But, no matter what languages you plan to code in and no matter how far you've come in this difficult task, you will definitely upgrade your brain, improve your understanding of the world around you and start to recognize secret passages where you have seen only impenetrable walls before. So it's time to start the IDE, focus a little bit, and start practicing.
+
+And remember: “This is my Python. There are many like it, but this one is mine. My Python is my best friend. It is my life. I must master it as I must master my life.  Without me, my Python is useless. Without my Python, I am useless. My Python and I know that what counts in life is not the words we say, the lines of our code, nor the time we spend at the office. We know that it is the completed tasks that count. We will complete them. My Python is human, even as I, because it is my Python. Thus, I will treat it as a brother. I will learn its weaknesses, its strength, its parts and accessories, its standard library and its infrastructure. I will keep my Python from dangerous misunderstanding or suboptimal use, even as I do my legs and arms, my eyes and heart from any harm. I will keep my Python clean and ready. We will become part of each other.  So be it.”
