@@ -1,54 +1,54 @@
-## Language Skeleton
+## Развёртывание и администрирование
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Несмотря на то, что темы «git» и особенно «Linux» весьма непросты и объемны, начало кривой обучения у них не очень крутое, поэтому я крайне рекомендую начать освоение DevOps с освоения git'а (хотя бы в объёме add-commit-push, так у вас останется неидеальная, но всё же история изменений) и Linux (в объёме PuTTY + WinSCP, например; скопируйте ваши Python-скрипты через SSH и запустите их на удалённой Linux-машине). На Stepik'е, например, есть прекрасные русскоязычные курсы, подробно объясняющие, кто на ком стоял, а уж сосчитать хорошие англоязычные мануалы по этим тематикам не хватит пальцев у самого распоясавшегося мутанта.  
+Поверьте, Linux-консоль, выглядящая на первый взгляд такой непривычной и неудобной, покажется вам гораздо дружелюбнее, когда вы начнете изучать vim. Всё познается в сравнении!  
+
+Что ж, здесь наша карта заканчивается. Попробуйте дойти до последнего зеленого раздела, GitHub Actions; прогоните, например, линтер для своего open source проекта (GitHub Actions бесплатен для проектов с открытым исходным кодом).  
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph DevOps
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
+git -.-> Linux -.-> Development_lifecycle -.-> CI_CD -.-> Containers
 
-subgraph Garbage_Collector
+subgraph git
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+Basics(Basics)
+Branching(Branching)
+Tools(Tools)
+GitHub(GitHub)
 end
 
-subgraph Exception
+subgraph Linux
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+Install(Install)
+Directory_Structure("Directory Structure")
+Terminal(Terminal)
+Input_Output("Input/Output")
+bash(bash)
+System_administration("System administration")
+Network_administration("Network administration")
 end
 
-subgraph Typing
+subgraph Development_lifecycle
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+Git_flow("Git-flow")
+trunk_based_development("Trunk-based development")
 end
 
-subgraph Introspection
+subgraph CI_CD
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
+Continuous_testing("Continuous testing")
+GitHub_Actions("GitHub Actions")
+Jenkins(Jenkins)
+New_Relic("New Relic")
 end
 
-subgraph Other
+subgraph Containers
 direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+Docker(Docker)
+Kubernetes(Kubernetes)
 end
 
 end
@@ -86,12 +86,13 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
+class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class yield trainee;
+class generator trainee;
 class decorator trainee;
-class enter_exit_cm trainee;
+class context trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -201,12 +202,6 @@ class GitHub trainee;
 class Install trainee;
 class Directory_Structure trainee;
 class Terminal trainee;
-class accumulate trainee;
-class chain trainee;
-class compress trainee;
-class dropwhile trainee;
-class takewhile trainee;
-class typing_loc trainee;
 
 class bash middle;
 class System_administration middle;

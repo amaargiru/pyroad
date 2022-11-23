@@ -1,54 +1,97 @@
-## Language Skeleton
+## Архитектура
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Пожалуйста, постарайтесь не заучивать архитектурные принципы наизусть, это не бессмертные стихи Александра «Наше Всё» Пушкина. Никому еще не прибавляло ума бубнение о том, что «Принцип подстановки Барбары Лисков означает, что если S является подтипом T, тогда объекты типа T в программе могут быть...».  
+Просто попробуйте приложить тот же LSP к программе, которую пишете. Что вам даст соблюдение этого принципа? Какие проблемы последуют за его несоблюдением? Какую цену придётся заплатить за его имплементацию и поддержку?
+
+Попробуйте поиграться с функциональной парадигмой. Применение функционального подхода и его практическое использование вполне возможно не только в Haskell или F#, но и в Python, причём совершенно не обязательно делать это только в рамках functools.
+
+Разберитесь, что стоит за просьбой интервьюера «Сказать три главных слова» (если что, это не «я тебя люблю», а «наследование, инкапсуляция, полиморфизм») и почему следует дополнить эту триаду понятием «уровень абстракции».
+
+Попробуйте понять, с какими конкретными, осязаемыми проблемами старых парадигм столкнулись разработчики Agile или популяризаторы микросервисной архитектуры. Разберитесь, чем плох main(), который вызывает все остальные процедуры, ведь в эмбеддед программировании это распространенная практика. Взвесьте цену дополнительных слоёв абстракции, наворачиваемых между корневой бизнес-логикой и внешним миром.
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Architecture
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
+WhatIsArch -.-> Principles -.-> Paradigms -.-> Object-oriented -.-> Design_Patterns -.-> Microservices -.-> System_Design -.-> Practices
 
-subgraph Garbage_Collector
+WhatIsArch("What is?")
+subgraph Principles
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+
+subgraph SOLID
+SRP(SRP)
+OCP(OCP)
+LSP(LSP)
+ISP(ISP)
+DIP(DIP)
 end
 
-subgraph Exception
-direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+coupling_vs_cohesion("Coupling vs cohesion")
+KISS(KISS)
+DRY(DRY)
+YAGNI(YAGNI)
+
 end
 
-subgraph Typing
+subgraph Paradigms
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+Procedural(Procedural)
+Structured(Structured)
+parObject-oriented(Object-oriented)
+Functional(Functional)
 end
 
-subgraph Introspection
+subgraph Object-oriented
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
+ooInheritance(Inheritance)
+Encapsulation(Encapsulation)
+Polymorphism(Polymorphism)
+Abstraction(Abstraction)
 end
 
-subgraph Other
+subgraph Microservices
 direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+
+Decentralization(Decentralization)
+Smart_endpoints_dumb_pipes("Smart endpoints, dumb pipes")
+Design_for_failure("Design for failure")
+
+subgraph Messaging
+direction LR
+RabbitMQ(RabbitMQ)
+Apache_Kafka("Apache Kafka")
+end
+end
+
+subgraph Design_Patterns
+direction LR
+
+Observer(Observer)
+Decorator_Method(Decorator)
+Factory_Method("Factory Method")
+Adapter_Facade("Adapter, Facade")
+
+Creational_patterns("Creational patterns")
+Structural_patterns("Structural patterns")
+Behavioral_patterns("Behavioral patterns")
+end
+
+subgraph System_Design
+direction LR
+CQRS(CQRS)
+Two_Phase_Commit("Two-Phase Commit")
+Load_Balanced_Services("Load-Balanced Services")
+Pattern_of_Distributed_Systems("Patterns of Distributed Systems")
+Cloud_Design_Patterns("Cloud Design Patterns")
+end
+
+subgraph Practices
+direction LR
+Agile(Agile)
+Scrum(Scrum)
+Kanban(Kanban)
 end
 
 end
@@ -86,12 +129,13 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
+class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class yield trainee;
+class generator trainee;
 class decorator trainee;
-class enter_exit_cm trainee;
+class context trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -196,26 +240,14 @@ class Adapter_Facade trainee;
 class CQRS trainee;
 class Decentralization trainee;
 class Smart_endpoints_dumb_pipes trainee;
-class Basics trainee;
-class GitHub trainee;
-class Install trainee;
-class Directory_Structure trainee;
-class Terminal trainee;
-class accumulate trainee;
-class chain trainee;
-class compress trainee;
-class dropwhile trainee;
-class takewhile trainee;
-class typing_loc trainee;
 
-class bash middle;
-class System_administration middle;
-class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
+class git middle;
+class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
@@ -237,5 +269,4 @@ class Architectural_Patterns middle;
 class ELK_Stack middle;
 class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
-class New_Relic middle;
 ```

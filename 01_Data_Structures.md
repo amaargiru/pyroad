@@ -1,10 +1,10 @@
-## Структуры данных
+## Data Structures
 
-Напоминаю, если вы — начинающий разработчик, идите слева направо по пунктам, отмеченным зеленым цветом. Создайте экземпляры каждого типа, попробуйте добавить и удалить элементы, поработайте с ними в отладчике. Посмотрите, какого размера получаются объекты, попробуйте разобраться, почему list и array, содержащие одинаковые данные, отличаются в размерах. Изучите особенности каждого типа, почитайте и подумайте сами, в каких задачах какая структура данных будет смотреться оптимальнее.
+As a reminder, if you are a novice developer, go from left to right through the entries marked in green. Create instances of each type, try adding and removing elements, and experiment with them via the debugger. See how big the resulting objects are, and try to figure out why list and array containing the same data are different in size. Study the features of each type, read and figure out which data structure will work best for which tasks.
 
-Не забывайте, что это всего лишь путеводитель, оглавление для книги, которую вы должны написать сами. Активно ищите информацию в Сети, старайтесь работать с англоязычными источниками и с официальной документацией. Замените «Пикабу» и «ЯПлакал» на [Stackoverflow](https://stackoverflow.com/), там масса захватывающего чтива!
+Don't forget that this is just a guide, a table of contents for a book that you will have to write yourself. Actively seek information on the web, consult sources and official documentation. Dive [Stackoverflow](https://stackoverflow.com/) just for fun, there's plenty of exciting reading there!
 
-Если начинает получаться, переходите к следующему разделу, если не получается — не расстраивайтесь. Не надо ассоциировать свой ум с мечом Александра Македонского, разрубившего Гордиев узел одним чётким, уверенным движением, достойным главной страницы «Инстаграма». Будьте как рубанок — снимайте по тонкой кожурке за проход, и рано или поздно непонимание уйдёт, даже если вам кажется, что это пропасть глубиной в десять тысяч ли.
+If you start to make progress, move on to the next section, and don't feel bad if you can't. Don't envision your mind as the sword of Alexander the Great cutting the Gordian knot in one fluid, precise move, worthy of Instagram's front page. Be as a carpenter’s plane, stripping away one thin layer at a time, and sooner or later the misunderstanding will go away, even if this seems to you to be a chasm ten thousand leagues deep.
 
 ```mermaid
 flowchart TD

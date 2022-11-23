@@ -1,6 +1,6 @@
-## Потоки данных
+## Data Flows
 
-Добавьте к своим навыкам управления данными более специфичные возможности. Все рассмотренные темы крайне необходимы в процессе практического программирования и в том или ином виде присутствуют во всех современных языках. Так что если со временем вы будете переходить с Python на Java, C# или C++ — полученные знания не станут балластом.
+Add more specific capabilities to your data management skills. All of the topics covered are essential in the practical programming process and are present in all modern languages in one form or another. That way, if you eventually switch from Python to Java, C# or C++, the knowledge you've acquired won't become dead weight.
 
 ```mermaid
 flowchart TD

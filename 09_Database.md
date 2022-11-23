@@ -1,10 +1,10 @@
-## Базы данных
+## Databases
 
-Изучите сначала общие понятия, а потом специфику работы с конкретными системами управления базами данных. Попробуйте поработать с SQLite, даже если позже вы планируете перейти на PostgreSQL. SQLite является очень популярной БД, используется в Android, Chromium и еще в десятках популярных проектов. Вы же можете использовать SQLite в качестве удобного локального хранилища, как альтернативу прямой работе с файлами.
+Learn the general concepts first, and then the specifics of working with specific database management systems. Try working with SQLite, even if you're planning to switch to PostgreSQL later. SQLite is a very popular database, used in Android, Chromium and dozens of other popular projects. You can use SQLite as a convenient local storage alternative to working with files directly.
 
-Попробуйте, кстати, ненадолго вернуться к главе первой, «Структуры данных» и разобраться, как и почему устроены внутренности баз данных.
+By the way, try to briefly return to chapter one, Data Structures, to understand how and why the inner workings of databases are structured.
 
-Здесь, кстати, расположена еще одна дверь в «параллельные миры». Может быть вы захотите связать свое будущее с базами данных, став [DBA](https://en.wikipedia.org/wiki/Database_administrator)?
+This also provides yet another door into a "another world". Perhaps you would like to tie your future to databases by becoming a [DBA](https://en.wikipedia.org/wiki/Database_administrator)?
 
 ```mermaid
 flowchart TD

@@ -1,10 +1,10 @@
-## Многопоточность и многопроцессность
+## Multithreading and Multiprocessing
 
-Прежде чем погрузиться в изучение многопоточности и многопроцессной обработки данных, обязательно изучите их типовые сценарии использования. Возможны ситуации, когда выигрыш будет минимальным или будет отсутствовать вовсе.
+Before you dive into multithreading and multiprocessing, be sure to study their typical use cases. There may be situations in which the gain is minimal or non-existent.
 
-Попробуйте реализовать совместную быструю обработку данных и ожидание пользовательского ввода, меняющего исходные данные для расчетов, это даст вам понимание возможностей, плюсов и минусов разных подходов.
+Try to implement simultaneous fast data processing and waiting for user input, which changes the input data for calculations, so you understand the capabilities, pros and cons of different approaches.
 
-Не пытайтесь использовать сразу все возможности, предоставляемые Python, отталкивайтесь от решаемой задачи.
+Don't try to use all the features provided by Python at once, stick to the task at hand.
 
 ```mermaid
 flowchart TD

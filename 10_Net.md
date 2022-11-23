@@ -1,6 +1,6 @@
-## Сеть
+## Net
 
-Попробуйте сделать клиента и сервер, «подергайте» какой-нибудь популярный сайт или открытое API. Тут вы, кстати, вполне можете поэкспериментировать с HTML, CSS и даже с Java(Type)Script. Кто знает, может быть, ваш вариант — стать фуллстек программистом, сочетающим бек и фронт?
+Try to create a client and a server, poke some popular website or an open API. Here you might as well experiment with HTML, CSS, and even Java(Type)Script. Who knows, perhaps your choice would be to become a full-stack programmer, combining back- and frontend development.
 
 ```mermaid
 flowchart TD

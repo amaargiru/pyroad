@@ -1,8 +1,8 @@
-## Объектно-ориентированное программирование
+## Object-Oriented Programming
 
-Углубитесь в тематику объектно-ориентированного программирования. Поймите, что объекты — ваши друзья, и все их особенности и свойства, даже если они на первый взгляд не совсем интуитивны, имеют чисто утилитарные причины для существования.
+Dive into the subject of object-oriented programming. Understand that objects are your friends, and all their features and properties, even if they are not quite intuitive at first glance, have purely utilitarian reasons for existing.
 
-ООП существенно облегчает разделение, разработку и сопровождения кода, не просто делая очень сложные задачи подъемными для программистов средней руки, но и делая управляемее, предсказуемее и лучше мир вокруг нас.
+OOP makes it much easier to partition, develop and maintain code, not just making very complex tasks feasible for average programmers, but making the world around us more manageable, predictable and generally better.
 
 ```mermaid
 flowchart TD

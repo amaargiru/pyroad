@@ -1,9 +1,9 @@
-## Развёртывание и администрирование
+## Deployment and Administration
 
-Несмотря на то, что темы «git» и особенно «Linux» весьма непросты и объемны, начало кривой обучения у них не очень крутое, поэтому я крайне рекомендую начать освоение DevOps с освоения git'а (хотя бы в объёме add-commit-push, так у вас останется неидеальная, но всё же история изменений) и Linux (в объёме PuTTY + WinSCP, например; скопируйте ваши Python-скрипты через SSH и запустите их на удалённой Linux-машине). На Stepik'е, например, есть прекрасные русскоязычные курсы, подробно объясняющие, кто на ком стоял, а уж сосчитать хорошие англоязычные мануалы по этим тематикам не хватит пальцев у самого распоясавшегося мутанта.  
-Поверьте, Linux-консоль, выглядящая на первый взгляд такой непривычной и неудобной, покажется вам гораздо дружелюбнее, когда вы начнете изучать vim. Всё познается в сравнении!  
+Despite the fact that git and especially Linux are quite complicated and extensive topics, the beginning of their learning curve isn't very steep, so I highly recommend starting your DevOps mastering with git (at least the add-commit-push part, so you at least have a revision history, flawed as it is) and Linux (PuTTY + WinSCP, for example; copy your Python scripts via SSH and run them on a remote Linux machine). Fortunately, these days good text and video tutorials covering these topics are about as rare as grains of sand on the beach.
+Take it from me, the Linux console that looks so strange and inconvenient at first sight will seem much more familiar once you start learning vim. Cognition comes through comparison!
 
-Что ж, здесь наша карта заканчивается. Попробуйте дойти до последнего зеленого раздела, GitHub Actions; прогоните, например, линтер для своего open source проекта (GitHub Actions бесплатен для проектов с открытым исходным кодом).  
+Well, this is where our map ends. Try to reach the last green section, GitHub Actions; run a linter on your open source project, for example (GitHub Actions is free for open source projects).
 
 ```mermaid
 flowchart TD

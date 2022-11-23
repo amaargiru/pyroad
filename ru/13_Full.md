@@ -1,6 +1,6 @@
-## Overall Roadmap
+## Общая диаграмма
 
-The overall roadmap can be obtained by simply mechanically adding up the previous entries, just so we can see what we've ended up with. Overall [Mermaid](https://github.com/amaargiru/pyroad/blob/main/13_Full.md), [svg](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_svg/13_Full.svg), [png](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_png/13_Full.png).
+Суммарную диаграмму мы получим простым механическим сложением предыдущих пунктов, просто чтобы можно было посмотреть на то, что у нас в результате получилось. Финальные [Mermaid](https://github.com/amaargiru/pyroad/blob/main/13_Full.md), [svg](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_svg/13_Full.svg), [png](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_png/13_Full.png).
 
 ```mermaid
 flowchart TD

@@ -1,29 +1,29 @@
-## Python Junior Plus, or the Beginner's Roadmap to Python Programming
+## Пайтон Джуньор Плюс, или путеводитель начинающего Python-программиста
 
 ![Finding Python](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_jpg/header.jpeg)  
 
-Hello! My name is Mikhail Emelyanov, I am embedded software engineer, and I was inspired to write this little roadmap on the capabilities of Python language by a certain commonality among the existing Python tutorials found on the web.
+Добрый день! Меня зовут Михаил Емельянов, по профессии я программист программ, а этот небольшой путеводитель по возможностям языка Python меня сподвиг написать довольно существенный, на мой взгляд, разрыв между декларируемыми объемами всевозможных курсов программирования и требованиями реальных, даже достаточно скромнооплачиваеых вакансий, а также некоторая обобщенность существующих Python-путеводителей, найденных на просторах Сети.
 
-The usual suggestions to study, say, “Algorithms and Data Structures” or “Databases” are especially jarring. You can spend years studying these topics, and even after decades you'd still be able to find something you didn't know yet even without ever venturing outside the scope of Algorithms!
+Особенно выбивают из равновесия советы изучить, скажем, «Алгоритмы и структуры данных» или «SQL». Да зубы можно сточить, изучая эти темы, и даже будучи седовласым старцем, постоянно открывать для себя что-то новое, не выходя за рамки тематики «Алгоритмов»!
 
-Using video game analogies, we can say that novice programmers often stand on the shore of the lake of boiling lava with an island with the ever-coveted jobs in the center, while the islands in between, which you have to jump on, gradually increasing your skills in successive mini-quests, are either missing, or arranged haphazardly, or their fairly smooth sequence breaks off, never having managed to get you any farther from the shore. Let's try to build a path of hint islands, a number of which, although not without effort, will finally allow us to reach our goal.
+Пользуясь аналогиями из игрового мира, можно сказать, что начинающий программист зачастую стоит на берегу озера кипящей лавы, в центре которого находится остров со столь вожделенными вакансиями, а промежуточные островки, по которым надо перепрыгивать, постепенно наращивая свои навыки в последовательных мини-квестах, либо отсутствуют, либо расположены несистемно и хаотично, либо достаточно ровная их последовательность обрывается, так и не успев помочь отойти сколько-нибудь далеко от берега. Давайте попробуем построить дорожку островков-подсказок, ряд которых, хоть и не без усилий, позволит-таки нам достичь цели.
 
-The roadmap is very easy to use. Just as you would in a normal text, go from left to right and from top to bottom. If you're just starting to learn Python, follow the green sections of the roadmap. If your accumulated experience, curiosity, or necessity pushes you deeper, start exploring the sections marked in gray. Orange marks the topics that require in-depth study, those are better to tackle (at least without digging especially deep to begin with) on the third pass.
+Пользоваться путеводителем очень просто. Как в обычном тексте, идите слева направо и сверху вниз. Если вы только начинаете изучать Python, то идите по зеленым пунктам путеводителя. Если накопленный опыт, любопытство или необходимость толкают вас глубже, начните изучать разделы, помеченные серым. Оранжевым помечены темы, требующие углубленного изучения, ими лучше заняться (хотя бы и не копая, для начала, особенно глубоко) в третий проход.
 
-This article definitely contains mistakes and inaccuracies of different calibers, and of course, many required subsections are missing; so, if you notice any of these, feel free to comment, and if you feel the Force, you're welcome to fork the [GitHub repository](https://github.com/amaargiru/pyroad) with the roadmap's source code and contribute whatever you feel is necessary; all corrections and additions are strongly encouraged. It also contains all the parts of the map in [Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/) diagram format, as well as png/svg illustrations.
+В этой статье 100 % есть ошибки и неточности самых разных калибров, а также, само-собой, забыты многие необходимые подразделы; так что, если что-то углядите, не стесняйтесь выражаться в личку, в комментариях, на почту war4one@gmail.com, а если чувствуете в себе Силу — смело форкайте [GitHub-репозиторий](https://github.com/amaargiru/pyroad) с исходными текстами путеводителя и пишите туда всё, что считаете нужным; все исправления и дополнения бурно приветствуются. Там же есть все части карты в формате [Mermaid-диаграмм](https://habr.com/ru/post/652867/), а также в виде png/svg иллюстраций.
 
-When diving into Python, don't forget the excellent official documentation at [docs.python.org](https://docs.python.org/). By studying it, at least in brief, and gradually reading deeper into the right sections, you will be able to see that many of the “hacks”, “findings” and other obscure matters have long since been considered, described and have detailed examples of use.
+Погружаясь в Python, не забывайте про прекрасную официальную документацию [docs.python.org](https://docs.python.org/). Изучив её, хотя бы по диагонали, и постепенно углубляясь в нужные разделы, вы сможете убедиться, что многие «хаки», «открытия» и прочие неочевидные вещи уже давно разжеваны, описаны и имеют подробные примеры применения.
 
-I would also recommend [leetcode.com](https://leetcode.com/problemset/all/?difficulty=EASY&page=1&status=NOT_STARTED) for learning basic Python syntax to the fullest extent. If you filter the tasks by “Easy” level, and then add an additional sorting by the “Acceptance” column, you'll be presented with a straightforward primer with smoothly increasing task difficulty, rather than the intimidating competitive platform.
+Также я бы рекомендовал для изучения базового синтаксиса Python на полную катушку использовать [leetcode.com](https://leetcode.com/problemset/all/?difficulty=EASY&page=1&status=NOT_STARTED). Если отфильтровать задачи по уровню «Easy», а потом добавить дополнительную сортировку по столбцу «Acceptance», то перед вами предстанет не волчий оскал соревновательной платформы, а ванильный букварь с плавно нарастающим уровнем задачек.
 
-Well, that’s enough stalling for the moment. Let's get started! 
-## Data Structures
+Что ж, пожалуй, довольно запрягать. Погнали!  
+## Структуры данных
 
-As a reminder, if you are a novice developer, go from left to right through the entries marked in green. Create instances of each type, try adding and removing elements, and experiment with them via the debugger. See how big the resulting objects are, and try to figure out why list and array containing the same data are different in size. Study the features of each type, read and figure out which data structure will work best for which tasks.
+Напоминаю, если вы — начинающий разработчик, идите слева направо по пунктам, отмеченным зеленым цветом. Создайте экземпляры каждого типа, попробуйте добавить и удалить элементы, поработайте с ними в отладчике. Посмотрите, какого размера получаются объекты, попробуйте разобраться, почему list и array, содержащие одинаковые данные, отличаются в размерах. Изучите особенности каждого типа, почитайте и подумайте сами, в каких задачах какая структура данных будет смотреться оптимальнее.
 
-Don't forget that this is just a guide, a table of contents for a book that you will have to write yourself. Actively seek information on the web, consult sources and official documentation. Dive [Stackoverflow](https://stackoverflow.com/) just for fun, there's plenty of exciting reading there!
+Не забывайте, что это всего лишь путеводитель, оглавление для книги, которую вы должны написать сами. Активно ищите информацию в Сети, старайтесь работать с англоязычными источниками и с официальной документацией. Замените «Пикабу» и «ЯПлакал» на [Stackoverflow](https://stackoverflow.com/), там масса захватывающего чтива!
 
-If you start to make progress, move on to the next section, and don't feel bad if you can't. Don't envision your mind as the sword of Alexander the Great cutting the Gordian knot in one fluid, precise move, worthy of Instagram's front page. Be as a carpenter’s plane, stripping away one thin layer at a time, and sooner or later the misunderstanding will go away, even if this seems to you to be a chasm ten thousand leagues deep.
+Если начинает получаться, переходите к следующему разделу, если не получается — не расстраивайтесь. Не надо ассоциировать свой ум с мечом Александра Македонского, разрубившего Гордиев узел одним чётким, уверенным движением, достойным главной страницы «Инстаграма». Будьте как рубанок — снимайте по тонкой кожурке за проход, и рано или поздно непонимание уйдёт, даже если вам кажется, что это пропасть глубиной в десять тысяч ли.
 
 ```mermaid
 flowchart TD
@@ -242,13 +242,13 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
-## Data Management
+## Манипуляция данными
 
-Try to manipulate your data, feel how you can mold anything you want out of this malleable clay. Try creating a data structure with many elements (a million, for example), sort them, quickly find the values you want with bisect, and write the results in a JSON file.
+Пробуйте управлять вашими данными, почувствуйте, как вы можете лепить всё что угодно из этой податливой глины. Попробуйте создать структуру данных на много элементов (миллион, например), отсортируйте (sort) их, молниеносно найдите нужные значения при помощи bisect и запишите полученные результаты в JSON-файл.
 
-If everything goes according to plan, try to dig into the less obvious topics: apply regex to solve some simple task or save previously obtained data in Pickle format, understanding the reason for binary file formats after observing the size of the resulting files.
+Если всё идет по плану, попробуйте копнуть «серые» темы: примените regex для решения какой-нибудь несложной задачи или запишите ранее полученные данные в формате Pickle, наглядно, по размеру получившихся файлов, поняв, зачем нужны двоичные форматы файлов.
 
-This is where you will find the first entries marked in orange. Google what TensorFlow and Keras are and what tasks they solve. Perhaps, this could be your future job, your vocation!
+Здесь вы видите первые пункты, помеченные оранжевым. Погуглите, что такое TensorFlow и Keras, какие задачи они решают. Может быть, это ваша будущая работа, ваше призвание?
 
 ```mermaid
 flowchart TD
@@ -506,9 +506,9 @@ class Cloud_Design_Patterns middle;
 class New_Relic middle;
 class PyTorch middle;
 ```
-## Data Flows
+## Потоки данных
 
-Add more specific capabilities to your data management skills. All of the topics covered are essential in the practical programming process and are present in all modern languages in one form or another. That way, if you eventually switch from Python to Java, C# or C++, the knowledge you've acquired won't become dead weight.
+Добавьте к своим навыкам управления данными более специфичные возможности. Все рассмотренные темы крайне необходимы в процессе практического программирования и в том или ином виде присутствуют во всех современных языках. Так что если со временем вы будете переходить с Python на Java, C# или C++ — полученные знания не станут балластом.
 
 ```mermaid
 flowchart TD
@@ -753,11 +753,11 @@ class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
 ```
-## Object-Oriented Programming
+## Объектно-ориентированное программирование
 
-Dive into the subject of object-oriented programming. Understand that objects are your friends, and all their features and properties, even if they are not quite intuitive at first glance, have purely utilitarian reasons for existing.
+Углубитесь в тематику объектно-ориентированного программирования. Поймите, что объекты — ваши друзья, и все их особенности и свойства, даже если они на первый взгляд не совсем интуитивны, имеют чисто утилитарные причины для существования.
 
-OOP makes it much easier to partition, develop and maintain code, not just making very complex tasks feasible for average programmers, but making the world around us more manageable, predictable and generally better.
+ООП существенно облегчает разделение, разработку и сопровождения кода, не просто делая очень сложные задачи подъемными для программистов средней руки, но и делая управляемее, предсказуемее и лучше мир вокруг нас.
 
 ```mermaid
 flowchart TD
@@ -969,9 +969,9 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
-## Language Skeleton
+## Специфика языка
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Так, отлично, еще немного глубже. Изучение особенностей работы GIL или GC даст вам понимание, почему в том или ином случае всё идет наперекосяк, совсем не так, как вы планировали. А исключения вы, возможно, уже вовсю используете, учитывая их возможное возникновение при некоторых операциях со структурами данных, так что просто изучите их поглубже.
 
 ```mermaid
 flowchart TD
@@ -1210,13 +1210,13 @@ class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
 ```
-## Multithreading and Multiprocessing
+## Многопоточность и многопроцессность
 
-Before you dive into multithreading and multiprocessing, be sure to study their typical use cases. There may be situations in which the gain is minimal or non-existent.
+Прежде чем погрузиться в изучение многопоточности и многопроцессной обработки данных, обязательно изучите их типовые сценарии использования. Возможны ситуации, когда выигрыш будет минимальным или будет отсутствовать вовсе.
 
-Try to implement simultaneous fast data processing and waiting for user input, which changes the input data for calculations, so you understand the capabilities, pros and cons of different approaches.
+Попробуйте реализовать совместную быструю обработку данных и ожидание пользовательского ввода, меняющего исходные данные для расчетов, это даст вам понимание возможностей, плюсов и минусов разных подходов.
 
-Don't try to use all the features provided by Python at once, stick to the task at hand.
+Не пытайтесь использовать сразу все возможности, предоставляемые Python, отталкивайтесь от решаемой задачи.
 
 ```mermaid
 flowchart TD
@@ -1442,12 +1442,12 @@ class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
 ```
-## Common Practices
+## Общая практика
 
-Description of common methods used in almost all software projects, not just in Python. I/O, profiling, and logging apply universally.
+Описание распространенных подходов, используемых практически во всех программных проектах, и не только на Python. Ввод-вывод, профилирование, логгирование применимо абсолютно везде.
 
-Testing in general constitutes a separate profession, and often the quality of a software product can be judged by the test coverage of the source code. For example, the code of the SQLite database is 100% [covered by tests](https://www.sqlite.org/testing.html), while one line of "combative" code requires 608 lines of tests.  
-Jokes aside, projects with 100% coverage are not common, but pytest used wisely is the best guarantor of your sound sleep at night!
+Тестирование вообще составляет отдельную профессию, и часто о качестве программного продукта можно судить по тестовому покрытию исходного кода. Например, код базы данных SQLite [покрыт](https://www.sqlite.org/testing.html) тестами на 100 %, а на одну строку «боевого» кода приходится 608 строк тестов.  
+Проекты со стопроцентным покрытием встречаются не часто, но с умом используемый pytest служит лучшим гарантом вашего крепкого сна по ночам, кроме шуток!  
 
 ```mermaid
 flowchart TD
@@ -1673,9 +1673,9 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 class ELK_Stack middle;
 ```
-## Algorithms
+## Алгоритмы
 
-One of those areas of human knowledge that you can delve into endlessly. On the other hand, the learning curve of this discipline for covering the practical needs of the average programmer has long been known, so the initial stages shouldn't be too difficult for you. Who knows, maybe you'll enjoy it so much and drag it out that in time you might even be able to contribute a new robust argument in the discussion of “[Equality of P and NP classes](https://en.wikipedia.org/wiki/P_versus_NP_problem)”!
+Одна из тех областей человеческого знания, в которую можно углубляться бесконечно. Но, с другой стороны, кривая изучения этой дисциплины для покрытия практических нужд среднего программиста давно известна, так что начальные стадии не должны составить для вас особого труда. Кто знает, может быть, вам это так понравится и затянет, что со временем вы даже сможете сказать новое веское слово в дискуссии «[Равенство классов P и NP](https://en.wikipedia.org/wiki/P_versus_NP_problem)»?
 
 ```mermaid
 flowchart TD
@@ -1879,13 +1879,13 @@ class Kubernetes middle;
 class Architectural_Patterns middle;
 
 ```
-## Databases
+## Базы данных
 
-Learn the general concepts first, and then the specifics of working with specific database management systems. Try working with SQLite, even if you're planning to switch to PostgreSQL later. SQLite is a very popular database, used in Android, Chromium and dozens of other popular projects. You can use SQLite as a convenient local storage alternative to working with files directly.
+Изучите сначала общие понятия, а потом специфику работы с конкретными системами управления базами данных. Попробуйте поработать с SQLite, даже если позже вы планируете перейти на PostgreSQL. SQLite является очень популярной БД, используется в Android, Chromium и еще в десятках популярных проектов. Вы же можете использовать SQLite в качестве удобного локального хранилища, как альтернативу прямой работе с файлами.
 
-By the way, try to briefly return to chapter one, Data Structures, to understand how and why the inner workings of databases are structured.
+Попробуйте, кстати, ненадолго вернуться к главе первой, «Структуры данных» и разобраться, как и почему устроены внутренности баз данных.
 
-This also provides yet another door into a "another world". Perhaps you would like to tie your future to databases by becoming a [DBA](https://en.wikipedia.org/wiki/Database_administrator)?
+Здесь, кстати, расположена еще одна дверь в «параллельные миры». Может быть вы захотите связать свое будущее с базами данных, став [DBA](https://en.wikipedia.org/wiki/Database_administrator)?
 
 ```mermaid
 flowchart TD
@@ -2127,9 +2127,9 @@ class Jenkins middle;
 class Kubernetes middle;
 class Architectural_Patterns middle;
 ```
-## Net
+## Сеть
 
-Try to create a client and a server, poke some popular website or an open API. Here you might as well experiment with HTML, CSS, and even Java(Type)Script. Who knows, perhaps your choice would be to become a full-stack programmer, combining back- and frontend development.
+Попробуйте сделать клиента и сервер, «подергайте» какой-нибудь популярный сайт или открытое API. Тут вы, кстати, вполне можете поэкспериментировать с HTML, CSS и даже с Java(Type)Script. Кто знает, может быть, ваш вариант — стать фуллстек программистом, сочетающим бек и фронт?
 
 ```mermaid
 flowchart TD
@@ -2355,16 +2355,16 @@ class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
 ```
-## Architecture
+## Архитектура
 
-Please try not to memorize architectural principles by heart; they are not Shakespeare's timeless poems. The rambling about how “Liskov's substitution principle means that if S is a subtype of T, then objects of type T in a program can be...” offers no advantage to anyone.
-Just try applying the same LSP to the program you are writing. What benefit would compliance with this principle give you? What problems will result from not following it? What price will you have to pay for its implementation and support?
+Пожалуйста, постарайтесь не заучивать архитектурные принципы наизусть, это не бессмертные стихи Александра «Наше Всё» Пушкина. Никому еще не прибавляло ума бубнение о том, что «Принцип подстановки Барбары Лисков означает, что если S является подтипом T, тогда объекты типа T в программе могут быть...».  
+Просто попробуйте приложить тот же LSP к программе, которую пишете. Что вам даст соблюдение этого принципа? Какие проблемы последуют за его несоблюдением? Какую цену придётся заплатить за его имплементацию и поддержку?
 
-Try messing around with the functional paradigm. Applying the functional approach and using it in practice is possible not only in Haskell or F#, but also in Python, and it doesn't have to be done only within functools.
+Попробуйте поиграться с функциональной парадигмой. Применение функционального подхода и его практическое использование вполне возможно не только в Haskell или F#, но и в Python, причём совершенно не обязательно делать это только в рамках functools.
 
-Figure out the reasoning behind the job interviewer's request to “say the three main words” (it's not “I love you”, by the way, it’s “inheritance, encapsulation, polymorphism”) and why this triad should be supplemented with the “abstraction”.
+Разберитесь, что стоит за просьбой интервьюера «Сказать три главных слова» (если что, это не «я тебя люблю», а «наследование, инкапсуляция, полиморфизм») и почему следует дополнить эту триаду понятием «уровень абстракции».
 
-Try to understand what specific, tangible problems of the old paradigms the developers of Agile or the popularizers of microservice architecture faced. Figure out what's wrong with main(), which calls all the other procedures, since this is common practice in embedded programming. Weigh the cost of additional layers of abstraction between the root business logic and the outside world.
+Попробуйте понять, с какими конкретными, осязаемыми проблемами старых парадигм столкнулись разработчики Agile или популяризаторы микросервисной архитектуры. Разберитесь, чем плох main(), который вызывает все остальные процедуры, ведь в эмбеддед программировании это распространенная практика. Взвесьте цену дополнительных слоёв абстракции, наворачиваемых между корневой бизнес-логикой и внешним миром.
 
 ```mermaid
 flowchart TD
@@ -2627,12 +2627,12 @@ class ELK_Stack middle;
 class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 ```
-## Deployment and Administration
+## Развёртывание и администрирование
 
-Despite the fact that git and especially Linux are quite complicated and extensive topics, the beginning of their learning curve isn't very steep, so I highly recommend starting your DevOps mastering with git (at least the add-commit-push part, so you at least have a revision history, flawed as it is) and Linux (PuTTY + WinSCP, for example; copy your Python scripts via SSH and run them on a remote Linux machine). Fortunately, these days good text and video tutorials covering these topics are about as rare as grains of sand on the beach.
-Take it from me, the Linux console that looks so strange and inconvenient at first sight will seem much more familiar once you start learning vim. Cognition comes through comparison!
+Несмотря на то, что темы «git» и особенно «Linux» весьма непросты и объемны, начало кривой обучения у них не очень крутое, поэтому я крайне рекомендую начать освоение DevOps с освоения git'а (хотя бы в объёме add-commit-push, так у вас останется неидеальная, но всё же история изменений) и Linux (в объёме PuTTY + WinSCP, например; скопируйте ваши Python-скрипты через SSH и запустите их на удалённой Linux-машине). На Stepik'е, например, есть прекрасные русскоязычные курсы, подробно объясняющие, кто на ком стоял, а уж сосчитать хорошие англоязычные мануалы по этим тематикам не хватит пальцев у самого распоясавшегося мутанта.  
+Поверьте, Linux-консоль, выглядящая на первый взгляд такой непривычной и неудобной, покажется вам гораздо дружелюбнее, когда вы начнете изучать vim. Всё познается в сравнении!  
 
-Well, this is where our map ends. Try to reach the last green section, GitHub Actions; run a linter on your open source project, for example (GitHub Actions is free for open source projects).
+Что ж, здесь наша карта заканчивается. Попробуйте дойти до последнего зеленого раздела, GitHub Actions; прогоните, например, линтер для своего open source проекта (GitHub Actions бесплатен для проектов с открытым исходным кодом).  
 
 ```mermaid
 flowchart TD
@@ -2863,9 +2863,9 @@ class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
 ```
-## Overall Roadmap
+## Общая диаграмма
 
-The overall roadmap can be obtained by simply mechanically adding up the previous entries, just so we can see what we've ended up with. Overall [Mermaid](https://github.com/amaargiru/pyroad/blob/main/13_Full.md), [svg](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_svg/13_Full.svg), [png](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_png/13_Full.png).
+Суммарную диаграмму мы получим простым механическим сложением предыдущих пунктов, просто чтобы можно было посмотреть на то, что у нас в результате получилось. Финальные [Mermaid](https://github.com/amaargiru/pyroad/blob/main/13_Full.md), [svg](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_svg/13_Full.svg), [png](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_png/13_Full.png).
 
 ```mermaid
 flowchart TD
@@ -3750,13 +3750,15 @@ class Cloud_Design_Patterns middle;
 class New_Relic middle;
 class PyTorch middle;
 ```
-## That’s all for now
+## Пока всё
 
-As you may have noticed, there is no mention of control constructs, IDE installation or virtualenv in this guide. In my opinion, all these topics are very important, but do not constitute the essence of the language, representing something like a binding solution, while the topics discussed in the article, from list to Kubernetes, serve as the full-fledged “bricks”.
+Как вы могли заметить, в этом материале нет ни слова на темы «управляющие конструкции», «установка IDE» или «virtualenv». Все эти темы, на мой взгляд, весьма немаловажны, но не составляют сути языка, представляя что-то вроде связующего раствора, в то время как темы, обсуждаемые в статье — от «list» до «Kubernetes», служат полноценными «кирпичами».
 
-As a reminder, all the diagrams are made in Mermaid format (you can change the picture just by correcting the text), all the sources are available on [GitHub](https://github.com/amaargiru/pyroad), correct as much as you want, or, of course, leave comments directly in the comments section.
+Напоминаю, что все диаграммы сделаны в формате Mermaid (вы можете менять картинку, просто корректируя текст), все исходники доступны на [GitHub](https://github.com/amaargiru/pyroad), корректируйте, сколько хотите, или, само собой, пишите замечания прямо в комментариях.
 
-Separately, I welcome all beginner programmers. You will come to realize that working 8 hours in a row using your head and not your hands is hard, too. But, no matter what languages you plan to code in and no matter how far you've come in this difficult task, you will definitely upgrade your brain, improve your understanding of the world around you and start to recognize secret passages where you have seen only impenetrable walls before. So it's time to start the IDE, focus a little bit, and start practicing.
+Я сейчас готовлю следующую публикацию для «Хабра», с массой практических примеров, исходные тексты тоже лежат на [GitHub](https://github.com/amaargiru/pycore) в формате Jupiter Notebook, который позволяет перемешивать текстовые заметки, исходные коды и результаты вывода программ. Все примеры кода интерактивны, вы можете их менять, дополнять и вообще крутить как угодно, разбираясь в тонкостях Python. На GitHub лежит только черновик, так что где-то с середины повествование начинает зажевываться, заикаться, но попрактиковаться на материале нескольких первых глав уже вполне возможно.
 
-And remember: “This is my Python. There are many like it, but this one is mine. My Python is my best friend. It is my life. I must master it as I must master my life.  Without me, my Python is useless. Without my Python, I am useless. My Python and I know that what counts in life is not the words we say, the lines of our code, nor the time we spend at the office. We know that it is the completed tasks that count. We will complete them... My Python is human, even as I'm human, because it is my Python. Thus, I will learn it as a brother. I will learn its weaknesses, its strength, its parts and accessories, its standard library and its infrastructure. I will keep my Python from dangerous misunderstanding or suboptimal use, even as I do my legs and arms, my eyes and heart from any harm. I will keep my Python clean and ready. We will become part of each other. So be it.”
+Отдельной строкой я приветствую всех начинающих программистов. Не верьте сладким обещаниям всевозможных курсов, публикующим уже на главной ваши будущие расценки; на самом деле, если вам, при должном упорстве, удастся устроиться на работу по профилю, то первое время зарабатывать вы будете примерно ничего и еще звездюлей в придачу. Но — на каких бы языках вы не планировали писать, как бы далеко вы не продвинулись в этом трудном деле, вы совершенно точно устроите апгрейд своему мозгу, прокачаете понимание окружающего мира и начнете различать тайные ходы там, где раньше видели только глухие стены. Так что самое время открыть IDE, немного сосредоточится и начать практиковаться.
+
+И — помните: «Это мой Питон. Таких питонов много, но этот — мой. Мой Питон — мой лучший друг. Он — моя жизнь. Я должен научиться владеть им так же, как я владею своей жизнью. Без меня мой Питон бесполезен. Без моего Питона бесполезен я. Я и мой Питон знаем, на что идёт счет в этой жизни — не на количество сказанных нами слов, не на количество строк кода и не на время, проведенное в офисе. Мы знаем, что счёт будет вестись только на закрытые таски. И мы будем их закрывать. Мой Питон — это человек, такой же как я, потому что это мой Питон. Я должен относиться к нему как к своему брату, я должен изучить его слабости и его силу, его части и принадлежности, его стандартную библиотеку и его инфраструктуру. Я должен хранить его от губительного недопонимания и от неоптимального использования так же, как я храню от всякого вреда свои ноги и руки, свои глаза и своё сердце. Я должен хранить своего Питона чистым и готовым. Мы станем частью друг друга. Да будет так.»
 

@@ -1,60 +1,74 @@
-## Language Skeleton
+## Общая практика
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Описание распространенных подходов, используемых практически во всех программных проектах, и не только на Python. Ввод-вывод, профилирование, логгирование применимо абсолютно везде.
+
+Тестирование вообще составляет отдельную профессию, и часто о качестве программного продукта можно судить по тестовому покрытию исходного кода. Например, код базы данных SQLite [покрыт](https://www.sqlite.org/testing.html) тестами на 100 %, а на одну строку «боевого» кода приходится 608 строк тестов.  
+Проекты со стопроцентным покрытием встречаются не часто, но с умом используемый pytest служит лучшим гарантом вашего крепкого сна по ночам, кроме шуток!  
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Common_Practice
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
 
-subgraph Garbage_Collector
+Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
+
+subgraph Logging
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+StreamHandler(StreamHandler)
+ColoredFormatter(ColoredFormatter)
+Log_formatting("Log formatting")
+RotatingFileHandler(RotatingFileHandler)
+TimedRotatingFileHandler(TimedRotatingFileHandler)
+ELK_Stack("ELK Stack")
 end
 
-subgraph Exception
+subgraph Profiling
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+Stopwatch(Stopwatch)
+perf_counter(perf_counter)
+timeit
+Call_Graph("Call Graph")
 end
 
-subgraph Typing
+subgraph Random
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+random_mod(random)
+secrets(secrets)
 end
 
-subgraph Introspection
+subgraph Input
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
+input(input)
+Command_Line_Arguments("Command Line Arguments")
+Argument_Parser("Argument Parser")
 end
 
-subgraph Other
+subgraph Print
 direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+simple_print(print)
+json_print("json.dumps")
+Pretty_Print(pprint)
+end
+
+subgraph Cryptography
+direction LR
+MD5(MD5)
+AES(AES)
+cryptomore("...")
+end
+
+subgraph Testing
+direction LR
+pytest(pytest)
+mock(mock)
 end
 
 end
 
 classDef trainee fill:#6ADA6A, stroke-width:3px
 classDef middle fill:#FF9900, stroke-width:3px
+
 
 class List trainee;
 class tuple trainee;
@@ -86,12 +100,13 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
+class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class yield trainee;
+class generator trainee;
 class decorator trainee;
-class enter_exit_cm trainee;
+class context trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -189,33 +204,14 @@ class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
 class StreamHandler trainee;
-class Observer trainee;
-class Decorator_Method trainee;
-class Factory_Method trainee;
-class Adapter_Facade trainee;
-class CQRS trainee;
-class Decentralization trainee;
-class Smart_endpoints_dumb_pipes trainee;
-class Basics trainee;
-class GitHub trainee;
-class Install trainee;
-class Directory_Structure trainee;
-class Terminal trainee;
-class accumulate trainee;
-class chain trainee;
-class compress trainee;
-class dropwhile trainee;
-class takewhile trainee;
-class typing_loc trainee;
 
-class bash middle;
-class System_administration middle;
-class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
+class git middle;
+class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
@@ -230,12 +226,6 @@ class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
-class Creational_patterns middle;
-class Structural_patterns middle;
-class Behavioral_patterns middle;
 class Architectural_Patterns middle;
 class ELK_Stack middle;
-class Pattern_of_Distributed_Systems middle;
-class Cloud_Design_Patterns middle;
-class New_Relic middle;
 ```

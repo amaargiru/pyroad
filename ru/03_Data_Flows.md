@@ -1,54 +1,61 @@
-## Language Skeleton
+## Потоки данных
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Добавьте к своим навыкам управления данными более специфичные возможности. Все рассмотренные темы крайне необходимы в процессе практического программирования и в том или ином виде присутствуют во всех современных языках. Так что если со временем вы будете переходить с Python на Java, C# или C++ — полученные знания не станут балластом.
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Data_Flows
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
 
-subgraph Garbage_Collector
+itertools -.-> enumerate -.-> Generator -.-> Decorator -.-> Context_managers
+
+subgraph itertools
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+
+subgraph Infinite_Iterators
+icount(count)
+icycle(cycle)
+irepeat(repeat)
 end
 
-subgraph Exception
-direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+subgraph Finite_Iterators
+accumulate(accumulate)
+chain(chain)
+compress(compress)
+dropwhile(dropwhile)
+takewhile(takewhile)
+fimore(...)
 end
 
-subgraph Typing
-direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+subgraph Combinatorics
+product(product)
+combinations(combinations)
+permutations(permutations)
+combinations_with_replacement(combinations_with_replacement)
+end
 end
 
-subgraph Introspection
+enumerate(enumerate)
+
+subgraph Generator
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
+yield("yield")
+yield_from("yield from")
+Generator_expression("Generator expression")
 end
 
-subgraph Other
+subgraph Decorator
 direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+decorator(decorator)
+LRUCache("LRU Cache")
+param_decorator("Parameterized decorator")
+end
+
+subgraph Context_managers
+direction LR
+enter_exit_cm("__enter__, __exit__")
+contextlib(contextlib)
 end
 
 end
@@ -206,7 +213,6 @@ class chain trainee;
 class compress trainee;
 class dropwhile trainee;
 class takewhile trainee;
-class typing_loc trainee;
 
 class bash middle;
 class System_administration middle;

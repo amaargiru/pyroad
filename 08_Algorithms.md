@@ -1,6 +1,6 @@
-## Алгоритмы
+## Algorithms
 
-Одна из тех областей человеческого знания, в которую можно углубляться бесконечно. Но, с другой стороны, кривая изучения этой дисциплины для покрытия практических нужд среднего программиста давно известна, так что начальные стадии не должны составить для вас особого труда. Кто знает, может быть, вам это так понравится и затянет, что со временем вы даже сможете сказать новое веское слово в дискуссии «[Равенство классов P и NP](https://en.wikipedia.org/wiki/P_versus_NP_problem)»?
+One of those areas of human knowledge that you can delve into endlessly. On the other hand, the learning curve of this discipline for covering the practical needs of the average programmer has long been known, so the initial stages shouldn't be too difficult for you. Who knows, maybe you'll enjoy it so much and drag it out that in time you might even be able to contribute a new robust argument in the discussion of “[Equality of P and NP classes](https://en.wikipedia.org/wiki/P_versus_NP_problem)”!
 
 ```mermaid
 flowchart TD

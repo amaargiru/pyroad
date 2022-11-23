@@ -1,54 +1,39 @@
-## Language Skeleton
+## Сеть
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Попробуйте сделать клиента и сервер, «подергайте» какой-нибудь популярный сайт или открытое API. Тут вы, кстати, вполне можете поэкспериментировать с HTML, CSS и даже с Java(Type)Script. Кто знает, может быть, ваш вариант — стать фуллстек программистом, сочетающим бек и фронт?
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Net
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
+HTTP -.-> requests -.-> websocket -.-> Frameworks -.-> API
 
-subgraph Garbage_Collector
+subgraph HTTP
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+HTTPS(HTTPS)
+CORS(CORS)
 end
 
-subgraph Exception
+requests(requests)
+websocket(websocket)
+
+subgraph Frameworks
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+Flask(Flask)
+aiohttp(aiohttp)
+Django(Django)
 end
 
-subgraph Typing
+subgraph API
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
-end
-
-subgraph Introspection
-direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
-end
-
-subgraph Other
-direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+REST(REST)
+Postman(Postman)
+Authentication(Authentication)
+jwt_tokens("JWT tokens")
+Swagger(Swagger)
+FastAPI(FastAPI)
+GraphQL(GraphQL)
 end
 
 end
@@ -187,7 +172,6 @@ class Encapsulation trainee;
 class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
-class aiohttp trainee;
 class StreamHandler trainee;
 class Observer trainee;
 class Decorator_Method trainee;
@@ -207,7 +191,10 @@ class compress trainee;
 class dropwhile trainee;
 class takewhile trainee;
 class typing_loc trainee;
+class REST trainee;
+class Postman trainee;
 
+class GraphQL middle;
 class bash middle;
 class System_administration middle;
 class Network_administration middle;

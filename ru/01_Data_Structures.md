@@ -1,56 +1,74 @@
-## Language Skeleton
+## Структуры данных
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Напоминаю, если вы — начинающий разработчик, идите слева направо по пунктам, отмеченным зеленым цветом. Создайте экземпляры каждого типа, попробуйте добавить и удалить элементы, поработайте с ними в отладчике. Посмотрите, какого размера получаются объекты, попробуйте разобраться, почему list и array, содержащие одинаковые данные, отличаются в размерах. Изучите особенности каждого типа, почитайте и подумайте сами, в каких задачах какая структура данных будет смотреться оптимальнее.
+
+Не забывайте, что это всего лишь путеводитель, оглавление для книги, которую вы должны написать сами. Активно ищите информацию в Сети, старайтесь работать с англоязычными источниками и с официальной документацией. Замените «Пикабу» и «ЯПлакал» на [Stackoverflow](https://stackoverflow.com/), там масса захватывающего чтива!
+
+Если начинает получаться, переходите к следующему разделу, если не получается — не расстраивайтесь. Не надо ассоциировать свой ум с мечом Александра Македонского, разрубившего Гордиев узел одним чётким, уверенным движением, достойным главной страницы «Инстаграма». Будьте как рубанок — снимайте по тонкой кожурке за проход, и рано или поздно непонимание уйдёт, даже если вам кажется, что это пропасть глубиной в десять тысяч ли.
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Data_Structures
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
+List(list) -.-> Tuple -.-> Dict -.-> Set -.-> Array -.-> Linked_List -.->Tree -.-> Python_specific_data_structures
 
-subgraph Garbage_Collector
+subgraph Tuple
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+tuple(tuple)
+namedtuple(namedtuple)
 end
 
-subgraph Exception
+subgraph Dict
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+dict(dict)
+HashProblem("Hash collisions")
+defaultdict(defaultdict)
+Counter(Counter)
 end
 
-subgraph Typing
+subgraph Set
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+set(set)
+FrozenSet("frozen set")
 end
 
-subgraph Introspection
+subgraph Array
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
+array(array)
+bytes(bytes)
+bytearray(bytearray)
 end
 
-subgraph Other
+subgraph Linked_List
 direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+SinglyLinkedList("Singly linked list")
+subgraph Doubly_Linked_List
+direction LR
+deque(deque)
+Queue(Queue)
+end
 end
 
+subgraph Tree
+direction LR
+tree(tree)
+heap(heap)
+B-tree(B-tree)
+RedBlackTree("Red–black tree")
+AVLTree("AVL tree")
+trie(trie)
+end
+
+subgraph Python_specific_data_structures
+direction LR
+enum(enum)
+range(range)
+dataclass(dataclass)
+struct(struct)
+string(string)
+datetime(datetime)
+end
 end
 
 classDef trainee fill:#6ADA6A, stroke-width:3px
@@ -86,12 +104,13 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
+class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class yield trainee;
+class generator trainee;
 class decorator trainee;
-class enter_exit_cm trainee;
+class context trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -117,8 +136,6 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
-class sleep trainee;
-class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -126,9 +143,10 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
+class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class random_mod trainee;
+class Random trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -160,13 +178,7 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class PRIMARY_KEY trainee;
-class FOREIGN_KEY trainee;
-class FROM trainee;
-class WHERE trainee;
-class SET trainee;
-class SQLite_benefits trainee;
-class Syntax_Diagrams trainee;
+class SQLite trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -188,54 +200,26 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
-class StreamHandler trainee;
-class Observer trainee;
-class Decorator_Method trainee;
-class Factory_Method trainee;
-class Adapter_Facade trainee;
-class CQRS trainee;
-class Decentralization trainee;
-class Smart_endpoints_dumb_pipes trainee;
-class Basics trainee;
-class GitHub trainee;
-class Install trainee;
-class Directory_Structure trainee;
-class Terminal trainee;
-class accumulate trainee;
-class chain trainee;
-class compress trainee;
-class dropwhile trainee;
-class takewhile trainee;
-class typing_loc trainee;
 
-class bash middle;
-class System_administration middle;
-class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
+class git middle;
+class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
-class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class SQL_standard middle;
-class Analyze_an_execution_plan middle;
+class ORM boldmiddleed;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
-class Creational_patterns middle;
-class Structural_patterns middle;
-class Behavioral_patterns middle;
 class Architectural_Patterns middle;
-class ELK_Stack middle;
-class Pattern_of_Distributed_Systems middle;
-class Cloud_Design_Patterns middle;
-class New_Relic middle;
+
 ```

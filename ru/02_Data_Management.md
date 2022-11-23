@@ -1,54 +1,74 @@
-## Language Skeleton
+## Манипуляция данными
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Пробуйте управлять вашими данными, почувствуйте, как вы можете лепить всё что угодно из этой податливой глины. Попробуйте создать структуру данных на много элементов (миллион, например), отсортируйте (sort) их, молниеносно найдите нужные значения при помощи bisect и запишите полученные результаты в JSON-файл.
+
+Если всё идет по плану, попробуйте копнуть «серые» темы: примените regex для решения какой-нибудь несложной задачи или запишите ранее полученные данные в формате Pickle, наглядно, по размеру получившихся файлов, поняв, зачем нужны двоичные форматы файлов.
+
+Здесь вы видите первые пункты, помеченные оранжевым. Погуглите, что такое TensorFlow и Keras, какие задачи они решают. Может быть, это ваша будущая работа, ваше призвание?
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Data_Management
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
-
-subgraph Garbage_Collector
+slice(slice) -.-> Sorting -.-> Comprehension -.-> String_Management -.-> Datetime_Management -.-> bisect(bisect) -.-> Functools -.->File -.-> Data_Analysis -.-> Neural_Networks
+subgraph Sorting
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+sort(sort)
+sorted(sorted)
 end
 
-subgraph Exception
+subgraph Comprehension
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+listcomprehension(list)
+dictcomprehension(dict)
+setcomprehension(set)
 end
 
-subgraph Typing
+subgraph String_Management
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+String_Built-in_Functions("Built-in functions")
+regex(regex)
 end
 
-subgraph Introspection
+subgraph Datetime_Management
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
+encode(encode)
+decode(decode)
+dtmath(math)
 end
 
-subgraph Other
+subgraph Functools
 direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+fmap(map)
+ffilter(filter)
+freduce(reduce)
+fpartial(partial)
+fmore(...)
+end
+
+subgraph File
+direction LR
+Read_Write("read/write")
+Text_Binary("text/binary")
+JSON(JSON)
+Pickle("Pickle")
+Protocol_Buffers("Protocol Buffers")
+paths(paths)
+end
+
+subgraph Data_Analysis
+direction LR
+Data_Built-in_Functions("Built-in functions")
+NumPy(NumPy)
+Pandas(Pandas)
+Matplotlib_Seaborn("Matplotlib/Seaborn")
+end
+
+subgraph Neural_Networks
+direction LR
+PyTorch(PyTorch)
+TensorFlow("TensorFlow/Keras")
 end
 
 end
@@ -187,7 +207,6 @@ class Encapsulation trainee;
 class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
-class aiohttp trainee;
 class StreamHandler trainee;
 class Observer trainee;
 class Decorator_Method trainee;
@@ -207,7 +226,10 @@ class compress trainee;
 class dropwhile trainee;
 class takewhile trainee;
 class typing_loc trainee;
+class REST trainee;
+class Postman trainee;
 
+class GraphQL middle;
 class bash middle;
 class System_administration middle;
 class Network_administration middle;
@@ -238,4 +260,5 @@ class ELK_Stack middle;
 class Pattern_of_Distributed_Systems middle;
 class Cloud_Design_Patterns middle;
 class New_Relic middle;
+class PyTorch middle;
 ```

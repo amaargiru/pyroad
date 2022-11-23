@@ -1,54 +1,70 @@
-## Language Skeleton
+## Многопоточность и многопроцессность
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Прежде чем погрузиться в изучение многопоточности и многопроцессной обработки данных, обязательно изучите их типовые сценарии использования. Возможны ситуации, когда выигрыш будет минимальным или будет отсутствовать вовсе.
+
+Попробуйте реализовать совместную быструю обработку данных и ожидание пользовательского ввода, меняющего исходные данные для расчетов, это даст вам понимание возможностей, плюсов и минусов разных подходов.
+
+Не пытайтесь использовать сразу все возможности, предоставляемые Python, отталкивайтесь от решаемой задачи.
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Multithreading_&_Multiprocessing
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
 
-subgraph Garbage_Collector
+Multithreading -.-> asyncio -.-> Multiprocessing -.->Synchronization
+
+subgraph Multithreading
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+Thread(Thread)
+Thread_Pool_Executor("Thread pool executor")
+Timer
 end
 
-subgraph Exception
+subgraph asyncio
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+subgraph High_level_API
+sleep(sleep)
+run(run)
+create_task(create_task)
+gather(gather)
+hilapi_more("...")
+end
+subgraph asyncio_Queues
+asQueue(Queue)
+asPriorityQueue(PriorityQueue)
+asLifoQueue(LifoQueue)
+end
+subgraph asyncio_Streams
+StreamReader(StreamReader)
+StreamWriter(StreamWriter)
+end
+subgraph Low_level_API
+new_event_loop(new_event_loop)
+run_forever(run_forever)
+lowlapi_more("...")
+end
 end
 
-subgraph Typing
+subgraph Multiprocessing
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+Pool(Pool)
+Process(Process)
+Pipe(Pipe)
+Value(Value)
+muArray(Array)
+Manager(Manager)
+Listener(Listener)
 end
 
-subgraph Introspection
+subgraph Synchronization
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
-end
-
-subgraph Other
-direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+Lock(Lock)
+Event(Event)
+Condition(Condition)
+Semaphore(Semaphore)
+BoundedSemaphore(BoundedSemaphore)
+Barrier(Barrier)
 end
 
 end
@@ -86,12 +102,13 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
+class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class yield trainee;
+class generator trainee;
 class decorator trainee;
-class enter_exit_cm trainee;
+class context trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -126,9 +143,10 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
+class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class random_mod trainee;
+class Random trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -188,34 +206,14 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
-class StreamHandler trainee;
-class Observer trainee;
-class Decorator_Method trainee;
-class Factory_Method trainee;
-class Adapter_Facade trainee;
-class CQRS trainee;
-class Decentralization trainee;
-class Smart_endpoints_dumb_pipes trainee;
-class Basics trainee;
-class GitHub trainee;
-class Install trainee;
-class Directory_Structure trainee;
-class Terminal trainee;
-class accumulate trainee;
-class chain trainee;
-class compress trainee;
-class dropwhile trainee;
-class takewhile trainee;
-class typing_loc trainee;
 
-class bash middle;
-class System_administration middle;
-class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
+class git middle;
+class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
@@ -230,12 +228,5 @@ class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
-class Creational_patterns middle;
-class Structural_patterns middle;
-class Behavioral_patterns middle;
 class Architectural_Patterns middle;
-class ELK_Stack middle;
-class Pattern_of_Distributed_Systems middle;
-class Cloud_Design_Patterns middle;
-class New_Relic middle;
 ```

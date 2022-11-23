@@ -1,54 +1,53 @@
-## Language Skeleton
+## Алгоритмы
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Одна из тех областей человеческого знания, в которую можно углубляться бесконечно. Но, с другой стороны, кривая изучения этой дисциплины для покрытия практических нужд среднего программиста давно известна, так что начальные стадии не должны составить для вас особого труда. Кто знает, может быть, вам это так понравится и затянет, что со временем вы даже сможете сказать новое веское слово в дискуссии «[Равенство классов P и NP](https://en.wikipedia.org/wiki/P_versus_NP_problem)»?
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Algorithms
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
+FizzBuzz -.-> bigo -.-> Sort -.-> Graphs -.-> Search -.-> Methods
+Recursion ==> Recursion
 
-subgraph Garbage_Collector
+FizzBuzz(FizzBuzz)
+bigo("O(n)")
+
+subgraph Sort
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+BubbleSort(BubbleSort)
+QuickSort(QuickSort)
+MergeSort(MergeSort)
+HeapSort(HeapSort)
+InsertionSort(InsertionSort)
+RadixSort(RadixSort)
 end
 
-subgraph Exception
+subgraph Graphs
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+Adjacency_Matrix("Adjacency matrix")
+Incidence_Matrix("Incidence matrix")
+Adjacency_List("Adjacency list")
+Incidence_List("Incidence list")
 end
 
-subgraph Typing
+subgraph Search
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+Linear_Search("Linear search")
+Binary_Search("Binary search")
+DFS(DFS)
+BFS(BFS)
+Dijkstras(Dijkstras)
+Bellman_Ford("Bellman–Ford")
 end
 
-subgraph Introspection
+subgraph Methods
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
-end
-
-subgraph Other
-direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+divide_and_conquer("Divide and conquer")
+Dynamic_programming("Dynamic programming")
+Greedy_algorithm("Greedy algorithm")
+Recursion(Recursion)
+methmore("...")
 end
 
 end
@@ -86,12 +85,13 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
+class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class yield trainee;
+class generator trainee;
 class decorator trainee;
-class enter_exit_cm trainee;
+class context trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -117,8 +117,6 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
-class sleep trainee;
-class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -126,9 +124,10 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
+class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class random_mod trainee;
+class Random trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -160,13 +159,7 @@ class SELECT trainee;
 class INSERT trainee;
 class UPDATE trainee;
 class DELETE trainee;
-class PRIMARY_KEY trainee;
-class FOREIGN_KEY trainee;
-class FROM trainee;
-class WHERE trainee;
-class SET trainee;
-class SQLite_benefits trainee;
-class Syntax_Diagrams trainee;
+class SQLite trainee;
 class Flask trainee;
 class Consistency trainee;
 class HTTPS trainee;
@@ -188,54 +181,26 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
-class StreamHandler trainee;
-class Observer trainee;
-class Decorator_Method trainee;
-class Factory_Method trainee;
-class Adapter_Facade trainee;
-class CQRS trainee;
-class Decentralization trainee;
-class Smart_endpoints_dumb_pipes trainee;
-class Basics trainee;
-class GitHub trainee;
-class Install trainee;
-class Directory_Structure trainee;
-class Terminal trainee;
-class accumulate trainee;
-class chain trainee;
-class compress trainee;
-class dropwhile trainee;
-class takewhile trainee;
-class typing_loc trainee;
 
-class bash middle;
-class System_administration middle;
-class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
+class git middle;
+class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
 class SQLAlchemy middle;
-class Django_ORM middle;
 class Django middle;
 class FastAPI middle;
-class SQL_standard middle;
-class Analyze_an_execution_plan middle;
+class ORM boldmiddleed;
 class TensorFlow middle;
 class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
-class Creational_patterns middle;
-class Structural_patterns middle;
-class Behavioral_patterns middle;
 class Architectural_Patterns middle;
-class ELK_Stack middle;
-class Pattern_of_Distributed_Systems middle;
-class Cloud_Design_Patterns middle;
-class New_Relic middle;
+
 ```

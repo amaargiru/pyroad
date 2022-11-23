@@ -1,58 +1,92 @@
-## Language Skeleton
+## Базы данных
 
-Perfect, a bit deeper now. Studying how GIL or GC works will give you an understanding of why things go awry in one case or another, not at all the way you planned. You are likely to use exceptions all the time, given that they can occur in some operations with data structures, so study them further.
+Изучите сначала общие понятия, а потом специфику работы с конкретными системами управления базами данных. Попробуйте поработать с SQLite, даже если позже вы планируете перейти на PostgreSQL. SQLite является очень популярной БД, используется в Android, Chromium и еще в десятках популярных проектов. Вы же можете использовать SQLite в качестве удобного локального хранилища, как альтернативу прямой работе с файлами.
+
+Попробуйте, кстати, ненадолго вернуться к главе первой, «Структуры данных» и разобраться, как и почему устроены внутренности баз данных.
+
+Здесь, кстати, расположена еще одна дверь в «параллельные миры». Может быть вы захотите связать свое будущее с базами данных, став [DBA](https://en.wikipedia.org/wiki/Database_administrator)?
 
 ```mermaid
 flowchart TD
 
-subgraph Language_Skeleton
+subgraph Database
 direction LR
-Garbage_Collector -.-> Exception -.-> Typing -.-> Introspection -.-> Other
 
-subgraph Garbage_Collector
+Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
+
+subgraph Database_basics
 direction LR
-reference_counting("Reference counting")
-garbage_collector("Garbage collector")
-debug_objgraph("GC debug / objgraph")
-pypygc("PyPy GC")
+Relational_model("Relational model")
+Transaction(Transaction)
+subgraph ACID
+Consistency(Consistency)
+Isolation(Isolation)
+end
+Nplusone("N+1 problem")
+SQL_injection("SQL injection")
+NoSQL(NoSQL)
 end
 
-subgraph Exception
+subgraph SQL
 direction LR
-exception_handling("Exception handling")
-built_in_exceptions("Built-in exceptions")
-exception_raising("Exception raising")
-user_exception("User exceptions")
-exception_object("Exception Object")
+
+subgraph DDL
+CREATE(CREATE)
+ALTER(ALTER)
+DROP(DROP)
+PRIMARY_KEY("PRIMARY KEY")
+FOREIGN_KEY("FOREIGN KEY")
+ddlmore("...")
 end
 
-subgraph Typing
+subgraph DML
+SELECT(SELECT)
+INSERT(INSERT)
+UPDATE(UPDATE)
+DELETE(DELETE)
+FROM(FROM)
+WHERE(WHERE)
+SET(SET)
+
+dmlmore("...")
+end
+
+DCL(DCL)
+TCL(TCL)
+SQL_standard("SQL standard")
+
+end
+
+subgraph SQLite
 direction LR
-typing_loc(typing)
-Protocol(Protocol)
-final("final (name mangling)")
-Literal(Literal)
-TypedDict(TypedDict)
+SQLite_benefits("SQLite benefits")
+Syntax_Diagrams("Syntax Diagrams")
+DB_Browser_for_SQLite("DB Browser for SQLite")
 end
 
-subgraph Introspection
+subgraph MySQL
 direction LR
-variables(variables)
-attributes(attributes)
-parameters(parameters)
+MySQL_Workbench("MySQL Workbench")
 end
 
-subgraph Other
+subgraph PostgreSQL
 direction LR
-GIL(GIL)
-args_kwargs("*, *args, **kwargs")
-lambda(lambda)
-Closure(Closure)
-Operator(Operator)
+PostgreSQL_benefits("PostgreSQL benefits")
+psql(psql)
+pgAdmin(pgAdmin)
+PostgreSQL_more("...")
 end
 
+subgraph ORM
+direction LR
+peewee(peewee)
+SQLAlchemy(SQLAlchemy)
+Django_ORM("Django ORM")
 end
 
+Analyze_an_execution_plan("Analyze an execution plan")
+
+end
 classDef trainee fill:#6ADA6A, stroke-width:3px
 classDef middle fill:#FF9900, stroke-width:3px
 
@@ -86,12 +120,13 @@ class Data_Built-in_Functions trainee;
 class icount trainee;
 class icycle trainee;
 class irepeat trainee;
+class pairwise trainee;
 class product trainee;
 class combinations trainee;
 class enumerate trainee;
-class yield trainee;
+class generator trainee;
 class decorator trainee;
-class enter_exit_cm trainee;
+class context trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
@@ -117,8 +152,6 @@ class built_in_exceptions trainee;
 class exception_raising trainee;
 class create_task trainee;
 class gather trainee;
-class sleep trainee;
-class run trainee;
 class wait_for trainee;
 class asQueue trainee;
 class Lock trainee;
@@ -126,9 +159,10 @@ class Event trainee;
 class variables trainee;
 class Thread trainee;
 class Pool trainee;
+class Logging trainee;
 class Stopwatch trainee;
 class timeit trainee;
-class random_mod trainee;
+class Random trainee;
 class input trainee;
 class Command_Line_Arguments trainee;
 class simple_print trainee;
@@ -188,34 +222,14 @@ class Polymorphism trainee;
 class Abstraction trainee;
 class trunk_based_development trainee;
 class aiohttp trainee;
-class StreamHandler trainee;
-class Observer trainee;
-class Decorator_Method trainee;
-class Factory_Method trainee;
-class Adapter_Facade trainee;
-class CQRS trainee;
-class Decentralization trainee;
-class Smart_endpoints_dumb_pipes trainee;
-class Basics trainee;
-class GitHub trainee;
-class Install trainee;
-class Directory_Structure trainee;
-class Terminal trainee;
-class accumulate trainee;
-class chain trainee;
-class compress trainee;
-class dropwhile trainee;
-class takewhile trainee;
-class typing_loc trainee;
 
-class bash middle;
-class System_administration middle;
-class Network_administration middle;
 class NoSQL middle;
 class Functional middle;
 class RabbitMQ middle;
 class Scrum middle;
 class Apache_Kafka middle;
+class git middle;
+class Linux middle;
 class Docker middle;
 class methmore middle;
 class PostgreSQL_more middle;
@@ -230,12 +244,5 @@ class Keras middle;
 class cryptomore middle;
 class Jenkins middle;
 class Kubernetes middle;
-class Creational_patterns middle;
-class Structural_patterns middle;
-class Behavioral_patterns middle;
 class Architectural_Patterns middle;
-class ELK_Stack middle;
-class Pattern_of_Distributed_Systems middle;
-class Cloud_Design_Patterns middle;
-class New_Relic middle;
 ```
