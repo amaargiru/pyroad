@@ -1,4 +1,4 @@
-## Python Junior Plus, or the Beginner's Roadmap to Python Programming
+## Python Junior Plus, or the beginner's Roadmap to becoming a Python programmer
 
 ![Finding Python](https://raw.githubusercontent.com/amaargiru/pyroad/main/pics_jpg/header.jpeg)  
 
