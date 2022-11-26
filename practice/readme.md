@@ -1,1 +1,1 @@
-Все практические обущающие материалы перенесены в https://github.com/amaargiru/pycore
+Все практические обучающие материалы перенесены в https://github.com/amaargiru/pycore
