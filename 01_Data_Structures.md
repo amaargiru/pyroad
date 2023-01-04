@@ -72,7 +72,6 @@ end
 end
 
 classDef trainee fill:#6ADA6A, stroke-width:3px
-classDef middle fill:#FF9900, stroke-width:3px
 
 class List trainee;
 class tuple trainee;
@@ -85,5 +84,4 @@ class heap trainee;
 class range trainee;
 class string trainee;
 class datetime trainee;
-
 ```

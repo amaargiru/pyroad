@@ -61,7 +61,6 @@ end
 end
 
 classDef trainee fill:#6ADA6A, stroke-width:3px
-classDef middle fill:#FF9900, stroke-width:3px
 
 class icount trainee;
 class icycle trainee;

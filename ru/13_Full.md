@@ -369,7 +369,7 @@ subgraph Profiling
 direction LR
 Stopwatch(Stopwatch)
 perf_counter(perf_counter)
-timeit
+timeit(timeit)
 Call_Graph("Call Graph")
 end
 
