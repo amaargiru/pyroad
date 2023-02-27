@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart TD
-Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practice ==> Algorithms ==> Database ==> Net ==> Architecture ==> DevOps
+Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practices ==> Algorithms ==> Databases ==> Net ==> Architecture ==> DevOps
 
 subgraph Data_Structures
 direction LR
@@ -286,6 +286,7 @@ args_kwargs("*, *args, **kwargs")
 lambda(lambda)
 Closure(Closure)
 Operator(Operator)
+YCombinator("Y Combinator")
 end
 
 end
@@ -350,7 +351,7 @@ end
 
 end
 
-subgraph Common_Practice
+subgraph Common_Practices
 direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
@@ -455,12 +456,12 @@ end
 
 end
 
-subgraph Database
+subgraph Databases
 direction LR
 
-Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
+Databases_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
 
-subgraph Database_basics
+subgraph Databases_basics
 direction LR
 Relational_model("Relational model")
 Transaction(Transaction)

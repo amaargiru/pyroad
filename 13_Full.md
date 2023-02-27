@@ -4,7 +4,7 @@ The overall roadmap can be obtained by simply mechanically adding up the previou
 
 ```mermaid
 flowchart TD
-Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practice ==> Algorithms ==> Database ==> Net ==> Architecture ==> DevOps
+Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practices ==> Algorithms ==> Databases ==> Net ==> Architecture ==> DevOps
 
 subgraph Data_Structures
 direction LR
@@ -49,7 +49,7 @@ end
 
 subgraph Tree
 direction LR
-tree(tree)
+tree("Binary tree")
 heap(heap)
 B-tree(B-tree)
 RedBlackTree("Red–black tree")
@@ -168,8 +168,8 @@ enumerate(enumerate)
 subgraph Generator
 direction LR
 yield("yield")
-yield_from("yield from")
 Generator_expression("Generator expression")
+yield_from("yield from")
 end
 
 subgraph Decorator
@@ -193,6 +193,7 @@ OOP_Base -.-> Duck_Types -.-> Iterable_Duck_Types -.-> Object_Copy -.->Inheritan
 
 subgraph OOP_Base
 direction LR
+Magicmethods("Magic methods")
 oopBase1("init, repr, str")
 oop_property("@property")
 staticmethod("@staticmethod")
@@ -202,10 +203,10 @@ end
 
 subgraph Duck_Types
 direction LR
+Iterator(Iterator)
 Comparable(Comparable)
 Hashable(Hashable)
 Sortable(Sortable)
-Iterator(Iterator)
 Callable(Callable)
 dt_Context_Manager("Context Manager")
 end
@@ -286,6 +287,7 @@ args_kwargs("*, *args, **kwargs")
 lambda(lambda)
 Closure(Closure)
 Operator(Operator)
+YCombinator("Y Combinator")
 end
 
 end
@@ -350,7 +352,7 @@ end
 
 end
 
-subgraph Common_Practice
+subgraph Common_Practices
 direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
@@ -455,12 +457,12 @@ end
 
 end
 
-subgraph Database
+subgraph Databases
 direction LR
 
-Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
+Databases_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
 
-subgraph Database_basics
+subgraph Databases_basics
 direction LR
 Relational_model("Relational model")
 Transaction(Transaction)
@@ -735,11 +737,13 @@ class enumerate trainee;
 class yield trainee;
 class decorator trainee;
 class enter_exit_cm trainee;
+class Magicmethods trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
 class classmethod trainee;
 class slots trainee;
+class Iterator trainee;
 class Comparable trainee;
 class Hashable trainee;
 class Sortable trainee;

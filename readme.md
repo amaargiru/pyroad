@@ -71,7 +71,7 @@ end
 
 subgraph Tree
 direction LR
-tree(tree)
+tree("Binary tree")
 heap(heap)
 B-tree(B-tree)
 RedBlackTree("Red–black tree")
@@ -245,8 +245,8 @@ enumerate(enumerate)
 subgraph Generator
 direction LR
 yield("yield")
-yield_from("yield from")
 Generator_expression("Generator expression")
+yield_from("yield from")
 end
 
 subgraph Decorator
@@ -305,10 +305,10 @@ end
 
 subgraph Duck_Types
 direction LR
+Iterator(Iterator)
 Comparable(Comparable)
 Hashable(Hashable)
 Sortable(Sortable)
-Iterator(Iterator)
 Callable(Callable)
 dt_Context_Manager("Context Manager")
 end
@@ -352,6 +352,7 @@ class oop_property trainee;
 class staticmethod trainee;
 class classmethod trainee;
 class slots trainee;
+class Iterator trainee;
 class Comparable trainee;
 class Hashable trainee;
 class Sortable trainee;
@@ -524,7 +525,7 @@ Jokes aside, projects with 100% coverage are not common, but pytest used wisely 
 ```mermaid
 flowchart TD
 
-subgraph Common_Practice
+subgraph Common_Practices
 direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
@@ -683,12 +684,12 @@ This also provides yet another door into a "another world". Perhaps you would li
 ```mermaid
 flowchart TD
 
-subgraph Database
+subgraph Databases
 direction LR
 
-Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
+Databases_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
 
-subgraph Database_basics
+subgraph Databases_basics
 direction LR
 Relational_model("Relational model")
 Transaction(Transaction)
@@ -1058,7 +1059,7 @@ The overall roadmap can be obtained by simply mechanically adding up the previou
 
 ```mermaid
 flowchart TD
-Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practice ==> Algorithms ==> Database ==> Net ==> Architecture ==> DevOps
+Data_Structures ==> Data_Management ==> Data_Flows ==> OOP ==> Language_Skeleton ==> Multithreading_&_Multiprocessing ==> Common_Practices ==> Algorithms ==> Databases ==> Net ==> Architecture ==> DevOps
 
 subgraph Data_Structures
 direction LR
@@ -1103,7 +1104,7 @@ end
 
 subgraph Tree
 direction LR
-tree(tree)
+tree("Binary tree")
 heap(heap)
 B-tree(B-tree)
 RedBlackTree("Red–black tree")
@@ -1222,8 +1223,8 @@ enumerate(enumerate)
 subgraph Generator
 direction LR
 yield("yield")
-yield_from("yield from")
 Generator_expression("Generator expression")
+yield_from("yield from")
 end
 
 subgraph Decorator
@@ -1256,10 +1257,10 @@ end
 
 subgraph Duck_Types
 direction LR
+Iterator(Iterator)
 Comparable(Comparable)
 Hashable(Hashable)
 Sortable(Sortable)
-Iterator(Iterator)
 Callable(Callable)
 dt_Context_Manager("Context Manager")
 end
@@ -1404,7 +1405,7 @@ end
 
 end
 
-subgraph Common_Practice
+subgraph Common_Practices
 direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing
@@ -1509,12 +1510,12 @@ end
 
 end
 
-subgraph Database
+subgraph Databases
 direction LR
 
-Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
+Databases_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
 
-subgraph Database_basics
+subgraph Databases_basics
 direction LR
 Relational_model("Relational model")
 Transaction(Transaction)
@@ -1794,6 +1795,7 @@ class oop_property trainee;
 class staticmethod trainee;
 class classmethod trainee;
 class slots trainee;
+class Iterator trainee;
 class Comparable trainee;
 class Hashable trainee;
 class Sortable trainee;

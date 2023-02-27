@@ -49,6 +49,7 @@ args_kwargs("*, *args, **kwargs")
 lambda(lambda)
 Closure(Closure)
 Operator(Operator)
+YCombinator("Y Combinator")
 end
 
 end

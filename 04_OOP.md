@@ -13,6 +13,7 @@ OOP_Base -.-> Duck_Types -.-> Iterable_Duck_Types -.-> Object_Copy -.->Inheritan
 
 subgraph OOP_Base
 direction LR
+Magicmethods("Magic methods")
 oopBase1("init, repr, str")
 oop_property("@property")
 staticmethod("@staticmethod")
@@ -22,10 +23,10 @@ end
 
 subgraph Duck_Types
 direction LR
+Iterator(Iterator)
 Comparable(Comparable)
 Hashable(Hashable)
 Sortable(Sortable)
-Iterator(Iterator)
 Callable(Callable)
 dt_Context_Manager("Context Manager")
 end
@@ -64,11 +65,13 @@ end
 
 classDef trainee fill:#6ADA6A, stroke-width:3px
 
+class Magicmethods trainee;
 class oopBase1 trainee;
 class oop_property trainee;
 class staticmethod trainee;
 class classmethod trainee;
 class slots trainee;
+class Iterator trainee;
 class Comparable trainee;
 class Hashable trainee;
 class Sortable trainee;

@@ -9,12 +9,12 @@ This also provides yet another door into a "another world". Perhaps you would li
 ```mermaid
 flowchart TD
 
-subgraph Database
+subgraph Databases
 direction LR
 
-Database_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
+Databases_basics -.-> SQL -.-> SQLite -.-> MySQL -.-> PostgreSQL -.-> ORM -.-> Analyze_an_execution_plan
 
-subgraph Database_basics
+subgraph Databases_basics
 direction LR
 Relational_model("Relational model")
 Transaction(Transaction)

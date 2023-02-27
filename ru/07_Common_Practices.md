@@ -1,14 +1,14 @@
-## Common Practices
+## Общая практика
 
-Description of common methods used in almost all software projects, not just in Python. I/O, profiling, and logging apply universally.
+Описание распространенных подходов, используемых практически во всех программных проектах, и не только на Python. Ввод-вывод, профилирование, логгирование применимо абсолютно везде.
 
-Testing in general constitutes a separate profession, and often the quality of a software product can be judged by the test coverage of the source code. For example, the code of the SQLite database is 100% [covered by tests](https://www.sqlite.org/testing.html), while one line of "combative" code requires 608 lines of tests.  
-Jokes aside, projects with 100% coverage are not common, but pytest used wisely is the best guarantor of your sound sleep at night!
+Тестирование вообще составляет отдельную профессию, и часто о качестве программного продукта можно судить по тестовому покрытию исходного кода. Например, код базы данных SQLite [покрыт](https://www.sqlite.org/testing.html) тестами на 100 %, а на одну строку «боевого» кода приходится 608 строк тестов.  
+Проекты со стопроцентным покрытием встречаются не часто, но с умом используемый pytest служит лучшим гарантом вашего крепкого сна по ночам, кроме шуток!  
 
 ```mermaid
 flowchart TD
 
-subgraph Common_Practice
+subgraph Common_Practices
 direction LR
 
 Logging -.-> Profiling -.-> Random -.-> Input -.-> Print -.-> Cryptography -.-> Testing

@@ -41,8 +41,8 @@ enumerate(enumerate)
 subgraph Generator
 direction LR
 yield("yield")
-yield_from("yield from")
 Generator_expression("Generator expression")
+yield_from("yield from")
 end
 
 subgraph Decorator

@@ -52,7 +52,7 @@ end
 
 subgraph Tree
 direction LR
-tree(tree)
+tree("Binary tree")
 heap(heap)
 B-tree(B-tree)
 RedBlackTree("Red–black tree")
